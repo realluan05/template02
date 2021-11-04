@@ -1,0 +1,19 @@
+@import '../var.scss';
+@import '../mixin/breakpoint';
+
+@mixin flex($a-items: '', $j-content: '', $flex-d: '')
+{
+    display: flex;
+    @if $a-items != '' {
+        align-items: $a-items;
+    }
+    @if $j-content != '' {
+        justify-content: $j-content;
+    }
+    @if $flex-d != '' {
+        @include bp(max-width, $bp-medium) {
+            flex-direction: $flex-d;
+            padding-bottom: $gap;        
+        }
+    }
+}

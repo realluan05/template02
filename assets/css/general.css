@@ -1,0 +1,60 @@
+/* ***************
+* Container
+**************** */
+/* ***************
+* Border-radius
+**************** */
+/* ***************
+* Breakpoints
+**************** */
+/* ***************
+* Margin/Padding
+**************** */
+/* ***************
+* Colors
+**************** */
+/* ***************
+* Fonts
+**************** */
+/* ***************
+* Font-size
+**************** */
+/* line 3, ../scss/general.scss */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 9, ../scss/general.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #637381;
+}
+
+/* line 17, ../scss/general.scss */
+a {
+  text-decoration: none;
+  transition: 300ms;
+  padding: 8px 16px;
+}
+/* line 22, ../scss/general.scss */
+a:hover {
+  color: #3056d3;
+}
+
+/* line 27, ../scss/general.scss */
+.button {
+  background-color: #3056d3;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: 300ms;
+}
+/* line 33, ../scss/general.scss */
+.button:hover {
+  background-color: #212b36;
+  color: #ffffff;
+}

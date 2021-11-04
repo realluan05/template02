@@ -1,0 +1,31 @@
+@import '../var.scss';
+
+@mixin h1 {
+    font-family: $f-stack-default;
+    color: $c-black;
+}
+
+@mixin h2 {
+    font-family: $f-stack-default;
+    color: $c-black;
+}
+
+@mixin h3 {
+    font-family: $f-stack-default;
+    color: $c-black;
+}
+
+@mixin h4 {
+    font-family: $f-stack-default;
+    color: $c-black;
+}
+
+@mixin h5 {
+    font-family: $f-stack-default;
+    color: $c-black;
+}
+
+@mixin h6 {
+    font-family: $f-stack-default;
+    color: $c-black;
+}

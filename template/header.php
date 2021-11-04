@@ -6,7 +6,7 @@
         <?php require_once 'menu.php'; ?>
         <div class="login">
             <a href="javascript:void(0)" class="enter">Sign In</a>
-            <a href="javascript:void(0)" class="exit">Sign Up</a>
+            <a href="javascript:void(0)" class="exit button">Sign Up</a>
         </div>
     </div>
 </header>

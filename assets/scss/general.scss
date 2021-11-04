@@ -1,0 +1,37 @@
+@import './var.scss';
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $f-stack-default;
+  color: $c-gray;
+}
+
+a {
+  text-decoration: none;
+  transition: 300ms;
+  padding: ($gap - 2) (($gap - 2) * 2);
+
+  &:hover {
+    color: $c-action;
+  }
+}
+
+.button {
+  background-color: $c-action;
+  color: $c-white;
+  border-radius: $default-border-radius;
+  transition: 300ms;
+
+  &:hover {
+    background-color: $c-black;
+    color: $c-white;
+  }
+}

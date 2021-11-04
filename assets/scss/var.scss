@@ -1,0 +1,59 @@
+/* ***************
+* Container
+**************** */
+
+$max-content-width: 1140px;
+
+/* ***************
+* Border-radius
+**************** */
+
+$default-border-radius: 5px;
+
+/* ***************
+* Breakpoints
+**************** */
+
+$bp-xlarge: 1200px;
+$bp-large: 992px;
+$bp-medium: 768px;
+$bp-small: 576px;
+$bp-xsmall: 400px;
+
+/* ***************
+* Margin/Padding
+**************** */
+
+$gap: 10px;
+$trim-small: 15px;
+$trim: 30px;
+
+/* ***************
+* Colors
+**************** */
+
+$c-action: #3056d3;
+$c-blue: $c-action;
+$c-gray: #637381;
+$c-gray-light: #dddddd;
+$c-black: #212b36;
+$c-white: #ffffff;
+
+/* ***************
+* Fonts
+**************** */
+
+$f-stack-default: "Inter", sans-serif;
+$f-stack-special: "Inter", sans-serif;
+
+/* ***************
+* Font-size
+**************** */
+
+$f-size-xxl: 18px;
+$f-size-xl: 16px;
+$f-size-l: 15px;
+$f-size: 14px;
+$f-size-s: 13px;
+$f-size-xs: 12px; 
+$f-size-xxs: 11px;

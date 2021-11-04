@@ -1,0 +1,13 @@
+@import '../var.scss';
+
+@mixin bp($type, $value) {
+    @if $type == "min-width" {
+        @media screen and ($type: $value) {
+            @content;
+        }
+    } @else if $type == "max-width" {
+        @media screen and ($type: $value) {
+            @content;
+        }
+    }
+}
