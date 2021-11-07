@@ -39,7 +39,7 @@ html, body {
 a {
   text-decoration: none;
   transition: 300ms;
-  padding: 8px 16px;
+  padding: 11px 16px;
 }
 /* line 22, ../scss/general.scss */
 a:hover {
@@ -57,4 +57,23 @@ a:hover {
 .button:hover {
   background-color: #212b36;
   color: #ffffff;
+}
+
+/* line 39, ../scss/general.scss */
+.header-container,
+.footer-container,
+.container {
+  max-width: 1115px;
+  margin: 0 auto;
+}
+
+/* line 46, ../scss/general.scss */
+ul, ol, li {
+  list-style: none;
+}
+
+/* line 50, ../scss/general.scss */
+img {
+  display: block;
+  max-width: 100%;
 }

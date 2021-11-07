@@ -43,6 +43,361 @@
 /* ***************
 * Font-size
 **************** */
+/* line 4, ../scss/layout/_header.scss */
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: all 300ms;
+  z-index: 999;
+}
+/* line 11, ../scss/layout/_header.scss */
+.header .features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+/* line 15, ../scss/layout/_header.scss */
+.header .features a.logo {
+  padding: 0;
+}
+/* line 19, ../scss/layout/_header.scss */
+.header .features a.logo2 {
+  display: none;
+}
+/* line 23, ../scss/layout/_header.scss */
+.header .features ul.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 26, ../scss/layout/_header.scss */
+.header .features ul.menu > li.item {
+  position: relative;
+  padding: 0 10px;
+}
+/* line 30, ../scss/layout/_header.scss */
+.header .features ul.menu > li.item > a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  transition: 300ms;
+}
+/* line 36, ../scss/layout/_header.scss */
+.header .features ul.menu > li.item:hover > a {
+  opacity: .5;
+}
+/* line 43, ../scss/layout/_header.scss */
+.header .features ul.menu > li.item.has-children > a {
+  position: relative;
+}
+/* line 46, ../scss/layout/_header.scss */
+.header .features ul.menu > li.item.has-children > a::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  transform: translateY(-50%) rotate(-45deg);
+  width: 10px;
+  height: 10px;
+  margin-top: -2px;
+}
+/* line 52, ../scss/layout/_header.scss */
+.header .features ul.menu > li.item.has-children:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+  top: 47px;
+}
+/* line 59, ../scss/layout/_header.scss */
+.header .features ul.menu > li.item.has-children .dropdown {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 57px;
+  left: 25px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 15px 44px rgba(140, 140, 140, 0.18);
+  min-width: 250px;
+  transition: 200ms;
+}
+/* line 74, ../scss/layout/_header.scss */
+.header .features ul.menu > li.item.has-children .dropdown > ul > li > a {
+  padding: 0;
+  color: #212b36;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 300ms;
+}
+/* line 79, ../scss/layout/_header.scss */
+.header .features ul.menu > li.item.has-children .dropdown > ul > li > a:hover {
+  color: #3056d3;
+}
+/* line 84, ../scss/layout/_header.scss */
+.header .features ul.menu > li.item.has-children .dropdown > ul > li:not(:last-child) {
+  margin-bottom: 15px;
+}
+/* line 94, ../scss/layout/_header.scss */
+.header .features .login > a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* line 97, ../scss/layout/_header.scss */
+.header .features .login > a:hover {
+  opacity: .5;
+}
+/* line 101, ../scss/layout/_header.scss */
+.header .features .login > a.exit {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+/* line 104, ../scss/layout/_header.scss */
+.header .features .login > a.exit:hover {
+  background-color: #ffffff;
+  color: #212b36;
+  opacity: 1;
+}
+/* line 114, ../scss/layout/_header.scss */
+.header.fixed {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+/* line 120, ../scss/layout/_header.scss */
+.header.fixed a.logo {
+  display: none;
+}
+/* line 124, ../scss/layout/_header.scss */
+.header.fixed a.logo2 {
+  display: block;
+}
+/* line 130, ../scss/layout/_header.scss */
+.header.fixed ul.menu > li.item > a {
+  color: #212b36;
+}
+/* line 133, ../scss/layout/_header.scss */
+.header.fixed ul.menu > li.item > a:hover {
+  color: #3056d3;
+  opacity: 1;
+}
+/* line 142, ../scss/layout/_header.scss */
+.header.fixed ul.menu > li.item.has-children > a::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  border-left: 2px solid #212b36;
+  border-bottom: 2px solid #212b36;
+  transform: translateY(-50%) rotate(-45deg);
+  width: 10px;
+  height: 10px;
+  margin-top: -2px;
+}
+/* line 148, ../scss/layout/_header.scss */
+.header.fixed ul.menu > li.item.has-children:hover > a {
+  opacity: 1;
+}
+/* line 151, ../scss/layout/_header.scss */
+.header.fixed ul.menu > li.item.has-children:hover > a::after {
+  border-left: 2px solid #3056d3;
+  border-bottom: 2px solid #3056d3;
+}
+/* line 161, ../scss/layout/_header.scss */
+.header.fixed .login > a {
+  color: #212b36;
+}
+/* line 165, ../scss/layout/_header.scss */
+.header.fixed .login > a.enter:hover {
+  opacity: 1;
+  color: #3056d3;
+}
+/* line 171, ../scss/layout/_header.scss */
+.header.fixed .login > a.exit {
+  background-color: #3056d3;
+  color: #ffffff;
+}
+/* line 175, ../scss/layout/_header.scss */
+.header.fixed .login > a.exit:hover {
+  color: #ffffff;
+  background-color: #212b36;
+}
+
+/* line 4, ../scss/layout/_footer.scss */
+.footer {
+  background-color: #212b36;
+  position: relative;
+}
+/* line 8, ../scss/layout/_footer.scss */
+.footer::before {
+  content: "";
+  background: url("../images/footer/shape-1.svg") no-repeat;
+  width: 570px;
+  height: 492px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+/* line 19, ../scss/layout/_footer.scss */
+.footer::after {
+  content: "";
+  background: url("../images/footer/shape-3.svg") no-repeat;
+  width: 372px;
+  height: 264px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+/* line 30, ../scss/layout/_footer.scss */
+.footer .camada {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 36, ../scss/layout/_footer.scss */
+.footer .footer-top,
+.footer .footer-bottom {
+  position: relative;
+  z-index: 9;
+}
+/* line 42, ../scss/layout/_footer.scss */
+.footer .footer-top {
+  padding: 100px 0 50px;
+  border-bottom: 1px solid #dddddd;
+}
+/* line 46, ../scss/layout/_footer.scss */
+.footer .footer-top .content {
+  display: flex;
+}
+/* line 49, ../scss/layout/_footer.scss */
+.footer .footer-top .content .item {
+  flex: 0 0 16.666666666666668%;
+}
+/* line 52, ../scss/layout/_footer.scss */
+.footer .footer-top .content .item a.logo {
+  display: block;
+  padding: 0;
+  margin-bottom: 15px;
+}
+/* line 58, ../scss/layout/_footer.scss */
+.footer .footer-top .content .item > h2 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+/* line 64, ../scss/layout/_footer.scss */
+.footer .footer-top .content .item > ul > li {
+  margin-bottom: 20px;
+}
+/* line 67, ../scss/layout/_footer.scss */
+.footer .footer-top .content .item > ul > li > a {
+  padding: 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* line 71, ../scss/layout/_footer.scss */
+.footer .footer-top .content .item > ul > li > a:hover {
+  color: #3056d3;
+  padding-left: 15px;
+}
+/* line 80, ../scss/layout/_footer.scss */
+.footer .footer-top .content .item:first-child, .footer .footer-top .content .item:last-child {
+  flex: 0 0 25%;
+}
+/* line 84, ../scss/layout/_footer.scss */
+.footer .footer-top .content .item:first-child {
+  padding-right: 30px;
+}
+/* line 87, ../scss/layout/_footer.scss */
+.footer .footer-top .content .item:first-child > h3 {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+/* line 94, ../scss/layout/_footer.scss */
+.footer .footer-top .content .item:first-child .social > a {
+  padding: 0;
+  color: #dddddd;
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 15px;
+}
+/* line 99, ../scss/layout/_footer.scss */
+.footer .footer-top .content .item:first-child .social > a:hover {
+  color: #3056d3;
+}
+/* line 107, ../scss/layout/_footer.scss */
+.footer .footer-top .content .item:last-child > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* line 111, ../scss/layout/_footer.scss */
+.footer .footer-top .content .item:last-child > ul > figure {
+  flex: 0 0 42%;
+  margin-bottom: 20px;
+}
+/* line 120, ../scss/layout/_footer.scss */
+.footer .footer-bottom {
+  padding: 50px 0;
+}
+/* line 123, ../scss/layout/_footer.scss */
+.footer .footer-bottom .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 127, ../scss/layout/_footer.scss */
+.footer .footer-bottom .content .item > ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+/* line 130, ../scss/layout/_footer.scss */
+.footer .footer-bottom .content .item > ul > li {
+  margin-right: 20px;
+}
+/* line 133, ../scss/layout/_footer.scss */
+.footer .footer-bottom .content .item > ul > li > a {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0;
+}
+/* line 137, ../scss/layout/_footer.scss */
+.footer .footer-bottom .content .item > ul > li > a:hover {
+  color: #3056d3;
+}
+/* line 145, ../scss/layout/_footer.scss */
+.footer .footer-bottom .content address {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+}
+/* line 149, ../scss/layout/_footer.scss */
+.footer .footer-bottom .content address > a {
+  color: #3056d3;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0;
+}
+/* line 153, ../scss/layout/_footer.scss */
+.footer .footer-bottom .content address > a:hover {
+  text-decoration: underline;
+}
+
 /* ************
 * Mixins
 ************ */

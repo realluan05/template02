@@ -20,14 +20,15 @@ function partners($src, $alt)
 }
 ?>
 
-<footer>
+<footer class="footer">
+    <img src="../assets/images/footer/shape-2.svg" class="camada" alt="Camada" loading="lazy" />
     <div class="footer-top">
         <div class="footer-container">
             <div class="content">
                 <div class="item">
                     <a href="#" class="logo">
                         <figure>
-                            <img src="../assets/images/logo/logo-2.svg" alt="Logo" loading="lazy">
+                            <img src="../assets/images/logo/logo.svg" alt="Logo" loading="lazy">
                         </figure>
                     </a>
                     <h3>We create digital experiences for brands and companies by using technology.</h3>

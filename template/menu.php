@@ -28,7 +28,7 @@ function dropItem($text, $href)
             <?= item("Pricing", "pricing"); ?>
             <?= item("Team", "team"); ?>
             <?= item("Contact", "contact"); ?>
-            <li class="item">
+            <li class="item has-children">
                 <a href="javascript:void(0)">Pages</a>
                 <div class="dropdown">
                     <ul>

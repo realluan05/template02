@@ -17,7 +17,7 @@ html, body {
 a {
   text-decoration: none;
   transition: 300ms;
-  padding: ($gap - 2) (($gap - 2) * 2);
+  padding: ($gap + 1) (($gap - 2) * 2);
 
   &:hover {
     color: $c-action;
@@ -34,4 +34,20 @@ a {
     background-color: $c-black;
     color: $c-white;
   }
+}
+
+.header-container,
+.footer-container,
+.container {
+  max-width: $max-content-width;
+  margin: 0 auto;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }

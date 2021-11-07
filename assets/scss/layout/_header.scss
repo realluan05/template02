@@ -1,1 +1,183 @@
 @import '../var.scss';
+@import './mixin';
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: all 300ms;
+  z-index: 999;
+
+  .features {
+    @include flex(center, space-between);
+    padding: $gap 0;
+
+    a.logo {
+      padding: 0;
+    }
+
+    a.logo2 {
+      display: none;
+    }
+
+    ul.menu {
+      @include flex(center, center);
+
+      > li.item {
+        position: relative;
+        padding: 0 $gap;
+
+        > a {
+          @include text($c-white, $f-size-xl, 400);
+          transition: 300ms;
+        }
+
+        &:hover {
+          > a {
+            opacity: .5;
+          }
+        }
+      }
+
+      > li.item.has-children {
+        > a {
+          position: relative;
+
+          &::after {
+            @include arrow($c-white);
+          }
+        }
+
+        &:hover {
+          .dropdown {
+            visibility: visible;
+            opacity: 1;
+            top: 47px;
+          }
+        }
+
+        .dropdown {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          top: 57px;
+          left: 25px;
+          background-color: #fff;
+          padding: $trim-small + $gap;
+          border-radius: $default-border-radius;
+          box-shadow: 0 15px 44px rgba(140, 140, 140, 0.18);
+          min-width: 250px;
+          transition: 200ms;
+
+          > ul {
+            > li {
+              > a {
+                padding: 0;
+                @include text($c-black, $f-size, 400);
+                transition: 300ms;
+
+                &:hover {
+                  color: $c-blue;
+                }
+              }
+
+              &:not(:last-child) {
+                margin-bottom: $trim-small;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .login {
+      > a {
+        @include text($c-white, $f-size-xl, 500);
+
+        &:hover {
+          opacity: .5;
+        }
+
+        &.exit {
+          background-color: rgba(255,255,255,0.15);
+
+          &:hover {
+            background-color: $c-white;
+            color: $c-black;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    background-color: rgba(255,255,255,0.85);
+    box-shadow: inset 0 -1px 0 0 rgba(000, 000, 000, 0.10);
+
+    a.logo {
+      display: none;
+    }
+
+    a.logo2 {
+      display: block;
+    }
+
+    ul.menu {
+      > li.item {
+        > a {
+          color: $c-black;
+
+          &:hover {
+            color: $c-blue;
+            opacity: 1;
+          }
+        }
+      }
+
+      > li.item.has-children {
+        > a {
+          &::after {
+            @include arrow($c-black);
+          }
+        }
+
+        &:hover {
+          > a {
+            opacity: 1;
+            
+            &::after {
+              border-left: 2px solid $c-blue;
+              border-bottom: 2px solid $c-blue;
+            }
+          }
+        }
+      }
+    }
+
+    .login {
+      > a {
+        color: $c-black;
+
+        &.enter {
+          &:hover {
+            opacity: 1;
+            color: $c-blue;
+          }
+        }
+
+        &.exit {
+          background-color: $c-blue;
+          color: $c-white;
+
+          &:hover {
+            color: $c-white;
+            background-color: $c-black;
+          }
+        }
+      }
+    }
+  }
+}

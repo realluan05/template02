@@ -1,0 +1,160 @@
+@import '../var.scss';
+@import './mixin';
+
+.footer {
+  background-color: $c-black;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: url('../images/footer/shape-1.svg') no-repeat;
+    width: 570px;
+    height: 492px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    background: url('../images/footer/shape-3.svg') no-repeat;
+    width: 372px;
+    height: 264px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .camada {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .footer-top,
+  .footer-bottom {
+    position: relative;
+    z-index: 9;
+  }
+
+  .footer-top {
+    padding: 100px 0 50px;
+    border-bottom: 1px solid $c-gray-light;
+
+    .content {
+      @include flex();
+
+      .item {
+        flex: 0 0 16.666666666666668%;
+
+        a.logo {
+          display: block;
+          padding: 0;
+          margin-bottom: $trim-small;
+        }
+
+        > h2 {
+          @include text($c-white, $f-size-xxl, 600);
+          margin-bottom: $trim + 5;
+        }
+
+        > ul {
+          > li {
+            margin-bottom: $trim-small + 5;
+
+            > a {
+              padding: 0;
+              @include text($c-white, $f-size, 400);
+
+              &:hover {
+                color: $c-blue;
+                padding-left: $trim-small;
+              }
+            }
+          }
+        }
+      }
+
+      .item:first-child, .item:last-child {
+        flex: 0 0 25%;
+      }
+
+      .item:first-child {
+        padding-right: $trim;
+
+        > h3 {
+          @include text($c-white, $f-size-l, 400);
+          line-height: 1.5;
+          margin-bottom: $trim;
+        }
+
+        .social {
+          > a {
+            padding: 0;
+            @include text($c-gray-light, $f-size-xxl, 400);
+            margin-right: $trim-small;
+
+            &:hover {
+              color: $c-blue;
+            }
+          }
+        }
+      }
+
+      .item:last-child {
+        > ul {
+          @include flex(center, space-between);
+          flex-wrap: wrap;
+
+          > figure {
+            flex: 0 0 42%;
+            margin-bottom: $trim-small + 5;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding: 50px 0;
+
+    .content {
+      @include flex(center, space-between);
+
+      .item {
+        > ul {
+          @include flex(center, flex-start);
+
+          > li {
+            margin-right: $trim-small + 5;
+
+            > a {
+              @include text($c-white, $f-size-l, 400);
+              padding: 0;
+
+              &:hover {
+                color: $c-blue;
+              }
+            }
+          }
+        }
+      }
+
+      address {
+        @include text($c-white, $f-size-l, 400);
+        font-style: normal;
+
+        > a {
+          @include text($c-blue, $f-size-l, 400);
+          padding: 0;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
