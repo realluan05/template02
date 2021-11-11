@@ -1,0 +1,201 @@
+@import './mixin';
+@import '../var.scss';
+
+.main {
+  section {
+    &.download {
+      background-color: $c-blue;
+      padding: 180px 0 0;
+
+      .container {
+        text-align: center;
+
+        h1 {
+          @include text($c-white, 45px, 700);
+          line-height: 1.4;
+          margin: 0 auto 40px;
+          max-width: $max-content-width - 365;
+        }
+
+        p.description {
+          @include text($c-white, $f-size-xxl + 2, 400);
+          opacity: 0.85;
+          max-width: 600px;
+          margin: 0 auto 40px;
+          line-height: 1.8;
+        }
+
+        .buttons {
+          @include flex(center, center, column);
+          max-width: $max-content-width - 365;
+          margin: 0 auto 40px;
+
+          .button {
+            background-color: $c-white;
+            @include text($c-black, $f-size-xl, 500);
+            padding: $trim-small $trim;
+            margin-right: $trim;
+
+            &:hover {
+              color: $c-action;
+            }
+          }
+
+          .link {
+            @include text($c-white, $f-size-xl, 400);
+
+            > i {
+              transition: 300ms;
+            }
+
+            &:hover {
+              opacity: 0.5;
+
+              > i {
+                transform: translateX(3px);
+              }
+            }
+          }
+        }
+
+        .brand {
+          max-width: 240px;
+          margin: 0 auto 40px;
+
+          > img {
+            margin: 0 auto;
+            opacity: 0.5;
+            transition: 300ms;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+
+        .img-dashboard {
+          > div {
+            position: relative;
+            margin: 0 auto;
+            max-width: 845px;
+
+            > img {
+              position: relative;
+              z-index: 9;
+              margin: 0 auto;
+            }
+
+            &::before {
+              content: "";
+              background: url('../../images/hero/dotted-shape.svg') no-repeat;
+              position: absolute;
+              width: 134px;
+              height: 106px;
+              left: -35px;
+              bottom: 0;
+            }
+
+            &::after {
+              content: "";
+              background: url('../../images/hero/dotted-shape.svg') no-repeat;
+              position: absolute;
+              width: 134px;
+              height: 106px;
+              right: -35px;
+              top: -20px;
+            }
+          }
+        }
+      }
+    }
+
+    &.features {
+      padding: 120px 0 0;
+
+      .container {
+        > span {
+          @include text($c-blue, $f-size-xxl, 700);
+          margin: 0 0 $trim-small;
+          display: block;
+        }
+
+        h2.title {
+          @include text($c-black, 42px, 700);
+          margin: 0 0 $trim;
+        }
+
+        p.description {
+          @include text($c-gray, $f-size-xxl + 2, 400);
+          max-width: 620px;
+          text-align: left;
+          line-height: 1.5;
+          margin: 0 0 50px;
+        }
+
+        ul.list {
+          @include flex(flex-start, space-between, column);
+
+          > li.item {
+            padding-right: $trim;
+
+            .image-view {
+              width: 70px;
+              height: 70px;
+              background-color: $c-blue;
+              border-radius: $default-border-radius * 2;
+              @include text($c-white, $trim + 2, 700);
+              margin-bottom: 50px;
+              position: relative;
+
+              > i {
+                @include alignFontAwesome;
+              }
+
+              &::before {
+                content: "";
+                background-color: $c-blue;
+                opacity: 0.3;
+                position: absolute;
+                width: 70px;
+                height: 70px;
+                z-index: -1;
+                border-radius: $default-border-radius * 2;
+                transform: rotate(25deg);
+                transition: 500ms;
+              }
+            }
+
+            > h2 {
+              @include text($c-black, $f-size-xxl + 2, 700);
+              margin-bottom: $trim-small;
+            }
+
+            > p {
+              @include text($c-gray, $f-size-xl, 400);
+              margin-bottom: 50px;
+              line-height: 1.5;
+            }
+
+            a.button {
+              display: inline-block;
+              background-color: transparent;
+              padding: 0;
+              @include text($c-gray, $f-size-xl, 600);
+              margin-bottom: $trim;
+
+              &:hover {
+                color: $c-action;
+              }
+            }
+
+            &:hover {
+              .image-view::before {
+                transform: rotate(45deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

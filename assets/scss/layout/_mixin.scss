@@ -13,7 +13,7 @@
     @if $flex-d != '' {
         @include bp(max-width, $bp-medium) {
             flex-direction: $flex-d;
-            padding-bottom: $gap;        
+            padding-bottom: $gap;
         }
     }
 }
@@ -59,4 +59,11 @@
     @include bp(max-width, $bp-medium) {
         display: none;
     }
+}
+
+@mixin alignFontAwesome
+{
+    @include flex(center, center);
+    height: 100%;
+    width: 100%;
 }
