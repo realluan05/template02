@@ -11,6 +11,7 @@
     <!-- Files CSS -->
     <link rel="stylesheet" href="../assets/css/styles.css" type="text/css" />
     <link rel="stylesheet" href="../assets/css/general.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/layout/home.css" type="text/css" />
 
     <!-- Files JS -->
     <script type="text/javascript" src="../assets/js/geral.js" async></script>

@@ -37,6 +37,7 @@ function dropItem($text, $href)
                         <?= dropItem("Contact Page", "contact.php") ?>
                         <?= dropItem("Blog Grid Page", "blog.php") ?>
                         <?= dropItem("Blog Details Page", "blog-details.php") ?>
+                        <?= dropItem("Sign in Page", "login.php") ?>
                         <?= dropItem("404 Page", "404.php") ?>
                     </ul>
                 </div>
