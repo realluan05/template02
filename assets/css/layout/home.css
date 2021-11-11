@@ -1,0 +1,254 @@
+/* ***************
+* Container
+**************** */
+/* ***************
+* Border-radius
+**************** */
+/* ***************
+* Breakpoints
+**************** */
+/* ***************
+* Margin/Padding
+**************** */
+/* ***************
+* Colors
+**************** */
+/* ***************
+* Fonts
+**************** */
+/* ***************
+* Font-size
+**************** */
+/* line 6, ../../scss/layout/home.scss */
+.main section.download {
+  background-color: #3056d3;
+  padding: 180px 0 0;
+}
+/* line 10, ../../scss/layout/home.scss */
+.main section.download .container {
+  text-align: center;
+}
+/* line 13, ../../scss/layout/home.scss */
+.main section.download .container h1 {
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 auto 40px;
+  max-width: 750px;
+}
+/* line 20, ../../scss/layout/home.scss */
+.main section.download .container p.description {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.85;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+}
+/* line 28, ../../scss/layout/home.scss */
+.main section.download .container .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 750px;
+  margin: 0 auto 40px;
+}
+@media screen and (max-width: 768px) {
+  /* line 28, ../../scss/layout/home.scss */
+  .main section.download .container .buttons {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+}
+/* line 33, ../../scss/layout/home.scss */
+.main section.download .container .buttons .button {
+  background-color: #ffffff;
+  color: #212b36;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 30px;
+  margin-right: 30px;
+}
+/* line 39, ../../scss/layout/home.scss */
+.main section.download .container .buttons .button:hover {
+  color: #3056d3;
+}
+/* line 44, ../../scss/layout/home.scss */
+.main section.download .container .buttons .link {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* line 47, ../../scss/layout/home.scss */
+.main section.download .container .buttons .link > i {
+  transition: 300ms;
+}
+/* line 51, ../../scss/layout/home.scss */
+.main section.download .container .buttons .link:hover {
+  opacity: 0.5;
+}
+/* line 54, ../../scss/layout/home.scss */
+.main section.download .container .buttons .link:hover > i {
+  transform: translateX(3px);
+}
+/* line 61, ../../scss/layout/home.scss */
+.main section.download .container .brand {
+  max-width: 240px;
+  margin: 0 auto 40px;
+}
+/* line 65, ../../scss/layout/home.scss */
+.main section.download .container .brand > img {
+  margin: 0 auto;
+  opacity: 0.5;
+  transition: 300ms;
+}
+/* line 70, ../../scss/layout/home.scss */
+.main section.download .container .brand > img:hover {
+  opacity: 1;
+}
+/* line 77, ../../scss/layout/home.scss */
+.main section.download .container .img-dashboard > div {
+  position: relative;
+  margin: 0 auto;
+  max-width: 845px;
+}
+/* line 82, ../../scss/layout/home.scss */
+.main section.download .container .img-dashboard > div > img {
+  position: relative;
+  z-index: 9;
+  margin: 0 auto;
+}
+/* line 88, ../../scss/layout/home.scss */
+.main section.download .container .img-dashboard > div::before {
+  content: "";
+  background: url("../../images/hero/dotted-shape.svg") no-repeat;
+  position: absolute;
+  width: 134px;
+  height: 106px;
+  left: -35px;
+  bottom: 0;
+}
+/* line 98, ../../scss/layout/home.scss */
+.main section.download .container .img-dashboard > div::after {
+  content: "";
+  background: url("../../images/hero/dotted-shape.svg") no-repeat;
+  position: absolute;
+  width: 134px;
+  height: 106px;
+  right: -35px;
+  top: -20px;
+}
+/* line 112, ../../scss/layout/home.scss */
+.main section.features {
+  padding: 120px 0 0;
+}
+/* line 116, ../../scss/layout/home.scss */
+.main section.features .container > span {
+  color: #3056d3;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 15px;
+  display: block;
+}
+/* line 122, ../../scss/layout/home.scss */
+.main section.features .container h2.title {
+  color: #212b36;
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0 0 30px;
+}
+/* line 127, ../../scss/layout/home.scss */
+.main section.features .container p.description {
+  color: #637381;
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 620px;
+  text-align: left;
+  line-height: 1.5;
+  margin: 0 0 50px;
+}
+/* line 135, ../../scss/layout/home.scss */
+.main section.features .container ul.list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  /* line 135, ../../scss/layout/home.scss */
+  .main section.features .container ul.list {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+}
+/* line 138, ../../scss/layout/home.scss */
+.main section.features .container ul.list > li.item {
+  padding-right: 30px;
+}
+/* line 141, ../../scss/layout/home.scss */
+.main section.features .container ul.list > li.item .image-view {
+  width: 70px;
+  height: 70px;
+  background-color: #3056d3;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  position: relative;
+}
+/* line 150, ../../scss/layout/home.scss */
+.main section.features .container ul.list > li.item .image-view > i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+/* line 154, ../../scss/layout/home.scss */
+.main section.features .container ul.list > li.item .image-view::before {
+  content: "";
+  background-color: #3056d3;
+  opacity: 0.3;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  z-index: -1;
+  border-radius: 10px;
+  transform: rotate(25deg);
+  transition: 500ms;
+}
+/* line 168, ../../scss/layout/home.scss */
+.main section.features .container ul.list > li.item > h2 {
+  color: #212b36;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+/* line 173, ../../scss/layout/home.scss */
+.main section.features .container ul.list > li.item > p {
+  color: #637381;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+/* line 179, ../../scss/layout/home.scss */
+.main section.features .container ul.list > li.item a.button {
+  display: inline-block;
+  background-color: transparent;
+  padding: 0;
+  color: #637381;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+/* line 186, ../../scss/layout/home.scss */
+.main section.features .container ul.list > li.item a.button:hover {
+  color: #3056d3;
+}
+/* line 192, ../../scss/layout/home.scss */
+.main section.features .container ul.list > li.item:hover .image-view::before {
+  transform: rotate(45deg);
+}

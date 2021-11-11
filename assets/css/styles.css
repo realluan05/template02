@@ -167,25 +167,26 @@
   top: 0;
   background-color: rgba(255, 255, 255, 0.85);
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
 }
-/* line 120, ../scss/layout/_header.scss */
+/* line 121, ../scss/layout/_header.scss */
 .header.fixed a.logo {
   display: none;
 }
-/* line 124, ../scss/layout/_header.scss */
+/* line 125, ../scss/layout/_header.scss */
 .header.fixed a.logo2 {
   display: block;
 }
-/* line 130, ../scss/layout/_header.scss */
+/* line 131, ../scss/layout/_header.scss */
 .header.fixed ul.menu > li.item > a {
   color: #212b36;
 }
-/* line 133, ../scss/layout/_header.scss */
-.header.fixed ul.menu > li.item > a:hover {
+/* line 136, ../scss/layout/_header.scss */
+.header.fixed ul.menu > li.item:hover > a {
   color: #3056d3;
   opacity: 1;
 }
-/* line 142, ../scss/layout/_header.scss */
+/* line 145, ../scss/layout/_header.scss */
 .header.fixed ul.menu > li.item.has-children > a::after {
   content: "";
   position: absolute;
@@ -198,30 +199,30 @@
   height: 10px;
   margin-top: -2px;
 }
-/* line 148, ../scss/layout/_header.scss */
+/* line 151, ../scss/layout/_header.scss */
 .header.fixed ul.menu > li.item.has-children:hover > a {
   opacity: 1;
 }
-/* line 151, ../scss/layout/_header.scss */
+/* line 154, ../scss/layout/_header.scss */
 .header.fixed ul.menu > li.item.has-children:hover > a::after {
   border-left: 2px solid #3056d3;
   border-bottom: 2px solid #3056d3;
 }
-/* line 161, ../scss/layout/_header.scss */
+/* line 164, ../scss/layout/_header.scss */
 .header.fixed .login > a {
   color: #212b36;
 }
-/* line 165, ../scss/layout/_header.scss */
+/* line 168, ../scss/layout/_header.scss */
 .header.fixed .login > a.enter:hover {
   opacity: 1;
   color: #3056d3;
 }
-/* line 171, ../scss/layout/_header.scss */
+/* line 174, ../scss/layout/_header.scss */
 .header.fixed .login > a.exit {
   background-color: #3056d3;
   color: #ffffff;
 }
-/* line 175, ../scss/layout/_header.scss */
+/* line 178, ../scss/layout/_header.scss */
 .header.fixed .login > a.exit:hover {
   color: #ffffff;
   background-color: #212b36;
@@ -396,6 +397,38 @@
 /* line 153, ../scss/layout/_footer.scss */
 .footer .footer-bottom .content address > a:hover {
   text-decoration: underline;
+}
+
+/* line 162, ../scss/layout/_footer.scss */
+#btn-ir-topo {
+  background-color: #3056d3;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  position: fixed;
+  z-index: 999;
+  right: 30px;
+  bottom: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  transition: 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 178, ../scss/layout/_footer.scss */
+#btn-ir-topo > i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+/* line 182, ../scss/layout/_footer.scss */
+#btn-ir-topo:hover {
+  background-color: #212b36;
 }
 
 /* ************

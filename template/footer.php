@@ -94,3 +94,7 @@ function partners($src, $alt)
             </div>
         </div>
 </footer>
+
+<div id="btn-ir-topo">
+    <i class="fas fa-chevron-up"></i>
+</div>
