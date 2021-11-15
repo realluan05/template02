@@ -67,3 +67,27 @@
     height: 100%;
     width: 100%;
 }
+
+@mixin circleBottom($color)
+{
+    content: "";
+    width: 55px;
+    height: 55px;
+    background-color: $color;
+    position: absolute;
+    left: -2px;
+    bottom: -2px;
+    border-radius: 0 55px 0 10px;
+}
+
+@mixin circleTop($color)
+{
+    content: "";
+    width: 55px;
+    height: 55px;
+    background-color: $color;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    border-radius: 0 10px 0 55px;
+}
