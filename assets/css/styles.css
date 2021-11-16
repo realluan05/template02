@@ -141,27 +141,36 @@
 .header .features ul.menu > li.item.has-children .dropdown > ul > li:not(:last-child) {
   margin-bottom: 15px;
 }
-/* line 94, ../scss/layout/_header.scss */
+/* line 91, ../scss/layout/_header.scss */
+.header .features ul.menu > li.item.has-children::after {
+  content: "";
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+/* line 103, ../scss/layout/_header.scss */
 .header .features .login > a {
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
 }
-/* line 97, ../scss/layout/_header.scss */
+/* line 106, ../scss/layout/_header.scss */
 .header .features .login > a:hover {
   opacity: .5;
 }
-/* line 101, ../scss/layout/_header.scss */
+/* line 110, ../scss/layout/_header.scss */
 .header .features .login > a.exit {
   background-color: rgba(255, 255, 255, 0.15);
 }
-/* line 104, ../scss/layout/_header.scss */
+/* line 113, ../scss/layout/_header.scss */
 .header .features .login > a.exit:hover {
   background-color: #ffffff;
   color: #212b36;
   opacity: 1;
 }
-/* line 114, ../scss/layout/_header.scss */
+/* line 123, ../scss/layout/_header.scss */
 .header.fixed {
   position: fixed;
   top: 0;
@@ -169,24 +178,24 @@
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
 }
-/* line 121, ../scss/layout/_header.scss */
+/* line 130, ../scss/layout/_header.scss */
 .header.fixed a.logo {
   display: none;
 }
-/* line 125, ../scss/layout/_header.scss */
+/* line 134, ../scss/layout/_header.scss */
 .header.fixed a.logo2 {
   display: block;
 }
-/* line 131, ../scss/layout/_header.scss */
+/* line 140, ../scss/layout/_header.scss */
 .header.fixed ul.menu > li.item > a {
   color: #212b36;
 }
-/* line 136, ../scss/layout/_header.scss */
+/* line 145, ../scss/layout/_header.scss */
 .header.fixed ul.menu > li.item:hover > a {
   color: #3056d3;
   opacity: 1;
 }
-/* line 145, ../scss/layout/_header.scss */
+/* line 154, ../scss/layout/_header.scss */
 .header.fixed ul.menu > li.item.has-children > a::after {
   content: "";
   position: absolute;
@@ -199,30 +208,30 @@
   height: 10px;
   margin-top: -2px;
 }
-/* line 151, ../scss/layout/_header.scss */
+/* line 160, ../scss/layout/_header.scss */
 .header.fixed ul.menu > li.item.has-children:hover > a {
   opacity: 1;
 }
-/* line 154, ../scss/layout/_header.scss */
+/* line 163, ../scss/layout/_header.scss */
 .header.fixed ul.menu > li.item.has-children:hover > a::after {
   border-left: 2px solid #3056d3;
   border-bottom: 2px solid #3056d3;
 }
-/* line 164, ../scss/layout/_header.scss */
+/* line 173, ../scss/layout/_header.scss */
 .header.fixed .login > a {
   color: #212b36;
 }
-/* line 168, ../scss/layout/_header.scss */
+/* line 177, ../scss/layout/_header.scss */
 .header.fixed .login > a.enter:hover {
   opacity: 1;
   color: #3056d3;
 }
-/* line 174, ../scss/layout/_header.scss */
+/* line 183, ../scss/layout/_header.scss */
 .header.fixed .login > a.exit {
   background-color: #3056d3;
   color: #ffffff;
 }
-/* line 178, ../scss/layout/_header.scss */
+/* line 187, ../scss/layout/_header.scss */
 .header.fixed .login > a.exit:hover {
   color: #ffffff;
   background-color: #212b36;

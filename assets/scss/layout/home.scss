@@ -197,5 +197,162 @@
         }
       }
     }
+
+    &.about-us {
+      background-color: #f3f4fe;
+      padding: 120px 0;
+
+      .container {
+        background-color: $c-white;
+        border: 1px solid #efefef;
+        @include flex(flex-start, space-between);
+
+        .left {
+          padding: 70px;
+          flex: 0 0 55%;
+
+          > span {
+            background-color: $c-blue;
+            @include text($c-white, $f-size, 500);
+            padding: ($gap / 2) ($trim - $gap);
+            margin: 0 0 $trim;
+            display: inline-block;
+          }
+
+          > h2 {
+            @include text($c-black, 36px, 700);
+            margin: 0 0 $trim;
+          }
+
+          .description {
+            @include text($c-gray, $f-size-xl, 400);
+            line-height: 1.5;
+
+            > p {
+              margin: 0 0 ($trim + $gap);
+            }
+          }
+
+          .button {
+            display: inline-block;
+            padding: ($trim-small + 3) $trim;
+
+            &:hover {
+              background-color: $c-blue-dark;
+              filter: drop-shadow(0px 0px 3px $c-blue-dark);
+            }
+          }
+        }
+      }
+    }
+
+    &.price {
+      .container {
+        padding: 120px 0 90px;
+        text-align: center;
+
+        > span {
+          @include text($c-blue, $f-size-xxl, 700);
+          margin: 0 0 $trim;
+          display: inline-block;
+        }
+
+        > h2 {
+          @include text($c-black, 42px, 700);
+          margin: 0 0 $trim;
+        }
+
+        > h3 {
+          @include text($c-gray, $f-size-xxl + 2, 400);
+          max-width: 620px;
+          margin: 0 auto 70px;
+        }
+
+        > ul.list {
+          @include flex(center, center, column);
+
+          > li.item {
+            border: 2px solid $c-blue-ligth;
+            border-radius: $default-border-radius * 2;
+            padding: ($trim-small + $trim) $trim;
+            flex: 0 0 33.33%;
+            position: relative;
+
+            > span {
+              display: inline-block;
+              text-transform: uppercase;
+              @include text($c-blue, $f-size-l, 700);
+              background-color: $c-white;
+              padding: $trim-small $trim;
+              border-radius: 50px;
+              margin: 0 0 ($gap * 2);
+            }
+
+            > h2 {
+              @include text($c-black, $f-size-l, 600);
+              text-transform: uppercase;
+              margin: 0 0 $gap;
+            }
+
+            > h3.price {
+              @include text($c-blue, 26px, 700);
+              margin: 0 0 50px;
+            }
+
+            ul.list-popular {
+              > li.item {
+                @include text($c-gray, $f-size-l, 500);
+
+                &:not(:last-child) {
+                  margin: 0 0 ($gap * 2);
+                }
+              }
+            }
+
+            a.button {
+              display: inline-block;
+              margin-top: $trim + $gap;
+              border: 1px solid $c-blue-ligth;
+              border-radius: 50px;
+              @include text($c-blue, $f-size-xl, 600);
+              background-color: $c-white;
+              padding: $trim-small ($trim + $gap);
+
+              &:hover {
+                background-color: $c-action;
+                color: $c-white;
+              }
+            }
+
+            &:nth-child(2) {
+              background: linear-gradient(180deg, $c-blue 0%,#179bee 100%);
+              border: 0;
+
+              > h2, > h3.price, ul.list-popular > li.item {
+                color: $c-white;
+              }
+
+              a.button {
+                border: 0;
+                color: $c-black;
+
+                &:hover {
+                  color: $c-white;
+                  background-color: $c-black;
+                }
+              }
+            }
+
+            &:first-child::after {
+              @include circleBottom($c-blue);
+            }
+
+            &:last-child::after {
+              @include circleTop($c-green);
+            }
+          }
+        }
+      }
+    }
   }
 }
