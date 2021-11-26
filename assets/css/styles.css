@@ -247,7 +247,7 @@
   content: "";
   background: url("../images/footer/shape-1.svg") no-repeat;
   width: 570px;
-  height: 492px;
+  height: 100%;
   position: absolute;
   left: 0;
   top: 0;
