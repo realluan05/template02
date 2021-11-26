@@ -133,10 +133,11 @@
         }
 
         ul.list {
-          @include flex(flex-start, space-between, column);
+          //@include flex(flex-start, space-between, column);
+          @include grid(1fr 1fr 1fr 1fr, 30px);
 
           > li.item {
-            padding-right: $trim;
+            //padding-right: $trim;
 
             .image-view {
               width: 70px;

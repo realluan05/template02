@@ -18,6 +18,13 @@
     }
 }
 
+@mixin grid($column, $gap)
+{
+    display: grid;
+    grid-template-columns: $column;
+    gap: $gap;
+}
+
 @mixin text($color, $f-size, $f-weight)
 {
     color: $color;
@@ -90,4 +97,12 @@
     right: -2px;
     top: -2px;
     border-radius: 0 10px 0 55px;
+}
+
+@mixin maxRow($value)
+{
+    display: -webkit-box;
+    -webkit-line-clamp: $value;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
