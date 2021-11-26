@@ -18,11 +18,14 @@
     }
 }
 
-@mixin grid($column, $gap)
+@mixin grid($column, $gap, $align: '')
 {
     display: grid;
     grid-template-columns: $column;
     gap: $gap;
+    @if $align != '' {
+        align-items: $align;
+    }
 }
 
 @mixin text($color, $f-size, $f-weight)

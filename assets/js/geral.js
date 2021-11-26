@@ -1,6 +1,6 @@
 jQuery(function($y){
 
-    $y(document).scroll(() => {
+    $y(document).scroll(function() {
         var header = $y('#header'),
             btnIrTopo = $y('#btn-ir-topo');
 
@@ -21,6 +21,11 @@ jQuery(function($y){
 
     $y('#btn-ir-topo').click(() => {
         $y('html, body').animate({scrollTop : 0}, 'slow');
+    });
+
+    $y('.faq .item > h4').click(function(){
+        $y(this).children('span').toggleClass('act');
+        $y(this).next().toggleClass('act');
     });
 
 });

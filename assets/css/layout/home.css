@@ -434,3 +434,106 @@
   top: -2px;
   border-radius: 0 10px 0 55px;
 }
+/* line 356, ../../scss/layout/home.scss */
+.main section.faq {
+  background: url("../../images/faq/shape.svg") no-repeat #f3f4fe;
+  background-size: cover;
+  padding: 120px 0 90px;
+}
+/* line 361, ../../scss/layout/home.scss */
+.main section.faq .container {
+  text-align: center;
+}
+/* line 364, ../../scss/layout/home.scss */
+.main section.faq .container > span {
+  color: #3056d3;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 15px;
+  display: block;
+}
+/* line 370, ../../scss/layout/home.scss */
+.main section.faq .container > h2 {
+  color: #212b36;
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0 0 30px;
+}
+/* line 375, ../../scss/layout/home.scss */
+.main section.faq .container > h3 {
+  max-width: 620px;
+  margin: 0 auto 70px;
+  color: #637381;
+  font-size: 20px;
+  font-weight: 400;
+}
+/* line 381, ../../scss/layout/home.scss */
+.main section.faq .container .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: flex-start;
+}
+/* line 384, ../../scss/layout/home.scss */
+.main section.faq .container .content .left, .main section.faq .container .content .right {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+/* line 388, ../../scss/layout/home.scss */
+.main section.faq .container .content .item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+}
+/* line 393, ../../scss/layout/home.scss */
+.main section.faq .container .content .item > h4 {
+  color: #212b36;
+  font-size: 18px;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+/* line 398, ../../scss/layout/home.scss */
+.main section.faq .container .content .item > h4 .button {
+  background-color: rgba(48, 86, 211, 0.06);
+  border-radius: 10px;
+  color: #3056d3;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+}
+/* line 405, ../../scss/layout/home.scss */
+.main section.faq .container .content .item > h4 .button > i {
+  transition: 300ms;
+}
+/* line 409, ../../scss/layout/home.scss */
+.main section.faq .container .content .item > h4 .button.act > i {
+  transform: rotateX(180deg);
+}
+/* line 415, ../../scss/layout/home.scss */
+.main section.faq .container .content .item .description-faq {
+  color: #637381;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 30px 0 0 62px;
+  line-height: 1.5;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: 500ms;
+}
+/* line 424, ../../scss/layout/home.scss */
+.main section.faq .container .content .item .description-faq.act {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+/* line 431, ../../scss/layout/home.scss */
+.main section.faq .container .content .item > h4, .main section.faq .container .content .item .description-faq {
+  text-align: left;
+}

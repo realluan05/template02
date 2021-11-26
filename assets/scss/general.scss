@@ -28,6 +28,7 @@ a {
   background-color: $c-action;
   color: $c-white;
   border-radius: $default-border-radius;
+  cursor: pointer;
   transition: 300ms;
 
   &:hover {

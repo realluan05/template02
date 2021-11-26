@@ -352,5 +352,88 @@
         }
       }
     }
+
+    &.faq {
+      background: url('../../images/faq/shape.svg') no-repeat #f3f4fe;
+      background-size: cover;
+      padding: 120px 0 90px;
+
+      .container {
+        text-align: center;
+
+        > span {
+          @include text($c-blue, $f-size-xxl, 700);
+          margin: 0 0 $trim-small;
+          display: block;
+        }
+
+        > h2 {
+          @include text($c-black, 42px, 700);
+          margin: 0 0 $trim;
+        }
+
+        > h3 {
+          max-width: 620px;
+          margin: 0 auto 70px;
+          @include text($c-gray, $f-size-xxl + 2, 400);
+        }
+
+        .content {
+          @include grid(1fr 1fr, $trim, flex-start);
+
+          .left, .right {
+            @include grid(1fr, 30px);
+          }
+
+          .item {
+            background-color: $c-white;
+            border-radius: $default-border-radius * 2;
+            padding: $trim;
+
+            > h4 {
+              @include text($c-black, $f-size-xxl, 700);
+              @include grid(1fr 10fr, $trim-small + 5, center);
+              cursor: pointer;
+
+              .button {
+                background-color: $c-blue-ligth-2;
+                border-radius: $default-border-radius * 2;
+                @include text($c-blue, $f-size-xxl, 400);
+                text-align: center;
+                padding: $gap;
+
+                > i {
+                  transition: 300ms;
+                }
+
+                &.act > i {
+                  transform: rotateX(180deg);
+                }
+              }
+            }
+
+            .description-faq {
+              @include text($c-gray, $f-size-xl, 400);
+              padding: $trim 0 0  (($trim * 2) + 2);
+              line-height: 1.5;
+              display: none;
+              opacity: 0;
+              visibility: hidden;
+              transition: 500ms;
+
+              &.act {
+                display: block;
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+
+            > h4, .description-faq {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -51,15 +51,16 @@ a:hover {
   background-color: #3056d3;
   color: #ffffff;
   border-radius: 5px;
+  cursor: pointer;
   transition: 300ms;
 }
-/* line 33, ../scss/general.scss */
+/* line 34, ../scss/general.scss */
 .button:hover {
   background-color: #212b36;
   color: #ffffff;
 }
 
-/* line 39, ../scss/general.scss */
+/* line 40, ../scss/general.scss */
 .header-container,
 .footer-container,
 .container {
@@ -67,12 +68,12 @@ a:hover {
   margin: 0 auto;
 }
 
-/* line 46, ../scss/general.scss */
+/* line 47, ../scss/general.scss */
 ul, ol, li {
   list-style: none;
 }
 
-/* line 50, ../scss/general.scss */
+/* line 51, ../scss/general.scss */
 img {
   display: block;
   max-width: 100%;
