@@ -133,12 +133,9 @@
         }
 
         ul.list {
-          //@include flex(flex-start, space-between, column);
           @include grid(1fr 1fr 1fr 1fr, 30px);
 
           > li.item {
-            //padding-right: $trim;
-
             .image-view {
               width: 70px;
               height: 70px;
@@ -270,13 +267,13 @@
         }
 
         > ul.list {
-          @include flex(center, center, column);
+          @include grid(1fr 1fr 1fr, 0);
+          align-items: center;
 
           > li.item {
             border: 2px solid $c-blue-ligth;
             border-radius: $default-border-radius * 2;
             padding: ($trim-small + $trim) $trim;
-            flex: 0 0 33.33%;
             position: relative;
 
             > span {

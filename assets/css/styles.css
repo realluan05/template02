@@ -283,50 +283,40 @@
 }
 /* line 46, ../scss/layout/_footer.scss */
 .footer .footer-top .content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.1fr;
+  gap: 30px;
 }
-/* line 49, ../scss/layout/_footer.scss */
-.footer .footer-top .content .item {
-  flex: 0 0 16.666666666666668%;
-}
-/* line 52, ../scss/layout/_footer.scss */
+/* line 53, ../scss/layout/_footer.scss */
 .footer .footer-top .content .item a.logo {
   display: block;
   padding: 0;
   margin-bottom: 15px;
 }
-/* line 58, ../scss/layout/_footer.scss */
+/* line 59, ../scss/layout/_footer.scss */
 .footer .footer-top .content .item > h2 {
   color: #ffffff;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 35px;
 }
-/* line 64, ../scss/layout/_footer.scss */
+/* line 65, ../scss/layout/_footer.scss */
 .footer .footer-top .content .item > ul > li {
   margin-bottom: 20px;
 }
-/* line 67, ../scss/layout/_footer.scss */
+/* line 68, ../scss/layout/_footer.scss */
 .footer .footer-top .content .item > ul > li > a {
   padding: 0;
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
 }
-/* line 71, ../scss/layout/_footer.scss */
+/* line 72, ../scss/layout/_footer.scss */
 .footer .footer-top .content .item > ul > li > a:hover {
   color: #3056d3;
   padding-left: 15px;
 }
-/* line 80, ../scss/layout/_footer.scss */
-.footer .footer-top .content .item:first-child, .footer .footer-top .content .item:last-child {
-  flex: 0 0 25%;
-}
-/* line 84, ../scss/layout/_footer.scss */
-.footer .footer-top .content .item:first-child {
-  padding-right: 30px;
-}
-/* line 87, ../scss/layout/_footer.scss */
+/* line 88, ../scss/layout/_footer.scss */
 .footer .footer-top .content .item:first-child > h3 {
   color: #ffffff;
   font-size: 15px;
@@ -334,7 +324,7 @@
   line-height: 1.5;
   margin-bottom: 30px;
 }
-/* line 94, ../scss/layout/_footer.scss */
+/* line 95, ../scss/layout/_footer.scss */
 .footer .footer-top .content .item:first-child .social > a {
   padding: 0;
   color: #dddddd;
@@ -342,73 +332,73 @@
   font-weight: 400;
   margin-right: 15px;
 }
-/* line 99, ../scss/layout/_footer.scss */
+/* line 100, ../scss/layout/_footer.scss */
 .footer .footer-top .content .item:first-child .social > a:hover {
   color: #3056d3;
 }
-/* line 107, ../scss/layout/_footer.scss */
+/* line 108, ../scss/layout/_footer.scss */
 .footer .footer-top .content .item:last-child > ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 111, ../scss/layout/_footer.scss */
+/* line 112, ../scss/layout/_footer.scss */
 .footer .footer-top .content .item:last-child > ul > figure {
   flex: 0 0 42%;
   margin-bottom: 20px;
 }
-/* line 120, ../scss/layout/_footer.scss */
+/* line 121, ../scss/layout/_footer.scss */
 .footer .footer-bottom {
   padding: 50px 0;
 }
-/* line 123, ../scss/layout/_footer.scss */
+/* line 124, ../scss/layout/_footer.scss */
 .footer .footer-bottom .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-/* line 127, ../scss/layout/_footer.scss */
+/* line 128, ../scss/layout/_footer.scss */
 .footer .footer-bottom .content .item > ul {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-/* line 130, ../scss/layout/_footer.scss */
+/* line 131, ../scss/layout/_footer.scss */
 .footer .footer-bottom .content .item > ul > li {
   margin-right: 20px;
 }
-/* line 133, ../scss/layout/_footer.scss */
+/* line 134, ../scss/layout/_footer.scss */
 .footer .footer-bottom .content .item > ul > li > a {
   color: #ffffff;
   font-size: 15px;
   font-weight: 400;
   padding: 0;
 }
-/* line 137, ../scss/layout/_footer.scss */
+/* line 138, ../scss/layout/_footer.scss */
 .footer .footer-bottom .content .item > ul > li > a:hover {
   color: #3056d3;
 }
-/* line 145, ../scss/layout/_footer.scss */
+/* line 146, ../scss/layout/_footer.scss */
 .footer .footer-bottom .content address {
   color: #ffffff;
   font-size: 15px;
   font-weight: 400;
   font-style: normal;
 }
-/* line 149, ../scss/layout/_footer.scss */
+/* line 150, ../scss/layout/_footer.scss */
 .footer .footer-bottom .content address > a {
   color: #3056d3;
   font-size: 15px;
   font-weight: 400;
   padding: 0;
 }
-/* line 153, ../scss/layout/_footer.scss */
+/* line 154, ../scss/layout/_footer.scss */
 .footer .footer-bottom .content address > a:hover {
   text-decoration: underline;
 }
 
-/* line 162, ../scss/layout/_footer.scss */
+/* line 163, ../scss/layout/_footer.scss */
 #btn-ir-topo {
   background-color: #3056d3;
   color: #ffffff;
@@ -427,7 +417,7 @@
   visibility: hidden;
   opacity: 0;
 }
-/* line 178, ../scss/layout/_footer.scss */
+/* line 179, ../scss/layout/_footer.scss */
 #btn-ir-topo > i {
   display: flex;
   align-items: center;
@@ -435,7 +425,7 @@
   height: 100%;
   width: 100%;
 }
-/* line 182, ../scss/layout/_footer.scss */
+/* line 183, ../scss/layout/_footer.scss */
 #btn-ir-topo:hover {
   background-color: #212b36;
 }

@@ -44,10 +44,11 @@
     border-bottom: 1px solid $c-gray-light;
 
     .content {
-      @include flex();
+      //@include flex();
+      @include grid(1.5fr 1fr 1fr 1fr 1.1fr, 30px);
 
       .item {
-        flex: 0 0 16.666666666666668%;
+        //flex: 0 0 16.666666666666668%;
 
         a.logo {
           display: block;
@@ -78,11 +79,11 @@
       }
 
       .item:first-child, .item:last-child {
-        flex: 0 0 25%;
+        //flex: 0 0 25%;
       }
 
       .item:first-child {
-        padding-right: $trim;
+        //padding-right: $trim;
 
         > h3 {
           @include text($c-white, $f-size-l, 400);
