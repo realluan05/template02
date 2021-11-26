@@ -123,3 +123,44 @@ function isPopular($popular)
         </ul>
     </div>
 </section>
+
+<?php
+function addFaq($title)
+{
+    if ($title) {
+        return "<h4>".$title."</h4>
+                <div class='description-faq'>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </div>";
+    }
+    return false;
+}
+?>
+
+<section id="faq" class="faq">
+    <div class="container">
+        <span>FAQ</span>
+        <h2>Any Questions? Answered</h2>
+        <h3>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</h3>
+        <div class="content">
+            <div class="item">
+                <?= addFaq("How to use UIdeck?") ?>
+            </div>
+            <div class="item">
+                <?= addFaq("Can I use this template for commercial project?") ?>
+            </div>
+            <div class="item">
+                <?= addFaq("How to download icons from Lineicons?") ?>
+            </div>
+            <div class="item">
+                <?= addFaq("Do you have plan releasing Play Pro?") ?>
+            </div>
+            <div class="item">
+                <?= addFaq("Is GrayGrids part of UIdeck?") ?>
+            </div>
+            <div class="item">
+                <?= addFaq("Where and how to host this template?") ?>
+            </div>
+        </div>
+    </div>
+</section>
