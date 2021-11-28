@@ -19,7 +19,8 @@
     </div>
 </section>
 
-<?php function itemFeatures($title, $desc, $classFontAwesome)
+<?php
+function itemFeatures($title, $desc, $classFontAwesome)
 {
     if ($title && $desc) {
         return '<li class="item">
