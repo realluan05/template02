@@ -52,3 +52,22 @@ img {
   display: block;
   max-width: 100%;
 }
+
+::-webkit-scrollbar {
+  width: 12px; // Define a largura do scrollbar
+}
+
+::-webkit-scrollbar-track {
+  background: $c-white; // Define a cor de fundo da barra de rolagem
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $c-black; // Define a cor do polegar de rolagem
+  border-radius: $default-border-radius; // Define a curva dos cantos do polegar de rolagem
+  border: 3px solid $c-black; // Cria bordas de preenchimentos ao redor do polegar de rolagem
+
+  &:hover {
+    background-color: $c-blue;
+    border-color: $c-blue;
+  }
+}

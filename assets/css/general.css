@@ -78,3 +78,25 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* line 56, ../scss/general.scss */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* line 60, ../scss/general.scss */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* line 64, ../scss/general.scss */
+::-webkit-scrollbar-thumb {
+  background-color: #212b36;
+  border-radius: 5px;
+  border: 3px solid #212b36;
+}
+/* line 69, ../scss/general.scss */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3056d3;
+  border-color: #3056d3;
+}
