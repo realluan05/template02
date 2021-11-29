@@ -268,3 +268,14 @@ function addTeam($img, $name, $charge)
         </div>
     </div>
 </section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="top">
+
+        </div>
+        <div class="bottom">
+
+        </div>
+    </div>
+</section>

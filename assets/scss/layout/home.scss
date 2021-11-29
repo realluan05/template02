@@ -537,7 +537,7 @@
             }
 
             > h5 {
-              @include text($c-black, $f-size-xxl, 700);
+              @include text($c-black, $f-size-xxl, 600);
               margin: $trim 0 $gap;
             }
 
