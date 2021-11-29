@@ -38,11 +38,11 @@ function itemFeatures($title, $classFontAwesome)
 
 <section id="features" class="features">
     <div class="container">
-        <span>Features</span>
-        <h2 class="title">Main Features Of Play</h2>
-        <p class="description">
+        <h2>Features</>
+        <h3>Main Features Of Play</h3>
+        <h4 class="description">
         There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.
-        </p>
+        </h4>
         <ul class="list">
             <?= itemFeatures("Free and Open-Source",
                             "fas fa-gift"); ?>
@@ -110,9 +110,9 @@ function isPopular($popular)
 
 <section id="price" class="price">
     <div class="container">
-        <span>Pricing</span>
-        <h2>Our Pricing Plans</h2>
-        <h3>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</h3>
+        <h2>Pricing</span>
+        <h3>Our Pricing Plans</h3>
+        <h4>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</h4>
         <ul class="list">
             <?= itemPricing("19.99", false) ?>
             <?= itemPricing("30.99", true) ?>
@@ -141,9 +141,9 @@ function addFaq($title)
 
 <section id="faq" class="faq">
     <div class="container">
-        <span>FAQ</span>
-        <h2>Any Questions? Answered</h2>
-        <h3>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</h3>
+        <h2>FAQ</h2>
+        <h3>Any Questions? Answered</h3>
+        <h4>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</h4>
         <div class="content">
             <div class="left">
                 <div class="item">
@@ -230,6 +230,41 @@ function addImageTestimonials($img)
                 <?= addImageTestimonials("lineicons.svg"); ?>
                 <?= addImageTestimonials("ecommerce-html.svg"); ?>
             </ul>
+        </div>
+    </div>
+</section>
+
+<?php
+function addTeam($img, $name, $charge)
+{
+    if($img) {
+        return '<div class="item">
+                    <div class="image-team">
+                        <img src="../assets/images/team/'.$img.'" alt="Imagem do Time" loading="lazy" />
+                    </div>
+                    <h5>'.$name.'</h5>
+                    <h6>'.$charge.'</h6>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>';
+    }
+    return false;
+}
+?>
+
+<section id="team" class="team">
+    <div class="container">
+        <h2>Our Team</h2>
+        <h3>Meet The Team</h3>
+        <h4>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form. </h4>
+        <div class="content">
+            <?= addTeam("team-01.png", "Adveen Desuza", "UI Designer"); ?>
+            <?= addTeam("team-02.png", "Jezmin uniya", "Product Designer"); ?>
+            <?= addTeam("team-03.png", "Andrieo Gloree", "App Develope"); ?>
+            <?= addTeam("team-04.png", "Jackie Sanders", "Content Writer"); ?>
         </div>
     </div>
 </section>

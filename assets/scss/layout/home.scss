@@ -3,6 +3,23 @@
 
 .main {
   section {
+    .container {
+      > h2 {
+        @include text($c-blue, $f-size-xxl, 700);
+      }
+
+      > h3 {
+        @include text($c-black, 42px, 700);
+        margin: $trim-small 0 ($trim-small + 5);
+      }
+
+      > h4 {
+        @include text($c-gray, $f-size-xxl + 2, 400);
+        max-width: 620px;
+        margin: 0 auto 70px;
+      }
+    }
+
     &.download {
       background-color: $c-blue;
       padding: 180px 0 0;
@@ -113,23 +130,8 @@
       padding: 120px 0 90px;
 
       .container {
-        > span {
-          @include text($c-blue, $f-size-xxl, 700);
-          margin: 0 0 $trim-small;
-          display: block;
-        }
-
-        h2.title {
-          @include text($c-black, 42px, 700);
-          margin: 0 0 $trim;
-        }
-
-        p.description {
-          @include text($c-gray, $f-size-xxl + 2, 400);
-          max-width: 620px;
-          text-align: left;
-          line-height: 1.5;
-          margin: 0 0 50px;
+        > h4 {
+          margin: 0 0 70px;
         }
 
         ul.list {
@@ -249,23 +251,6 @@
         padding: 120px 0 90px;
         text-align: center;
 
-        > span {
-          @include text($c-blue, $f-size-xxl, 700);
-          margin: 0 0 $trim;
-          display: inline-block;
-        }
-
-        > h2 {
-          @include text($c-black, 42px, 700);
-          margin: 0 0 $trim;
-        }
-
-        > h3 {
-          @include text($c-gray, $f-size-xxl + 2, 400);
-          max-width: 620px;
-          margin: 0 auto 70px;
-        }
-
         > ul.list {
           @include grid(1fr 1fr 1fr, 0);
           align-items: center;
@@ -361,23 +346,6 @@
       .container {
         text-align: center;
 
-        > span {
-          @include text($c-blue, $f-size-xxl, 700);
-          margin: 0 0 $trim-small;
-          display: block;
-        }
-
-        > h2 {
-          @include text($c-black, 42px, 700);
-          margin: 0 0 $trim;
-        }
-
-        > h3 {
-          max-width: 620px;
-          margin: 0 auto 70px;
-          @include text($c-gray, $f-size-xxl + 2, 400);
-        }
-
         .content {
           @include grid(1fr 1fr, $trim, flex-start);
 
@@ -441,21 +409,6 @@
 
       .container {
         text-align: center;
-
-        > h2 {
-          @include text($c-blue, $f-size-xxl, 600);
-        }
-
-        > h3 {
-          @include text($c-black, 42px, 700);
-          margin: $trim-small 0 ($trim-small + 5);
-        }
-
-        > h4 {
-          @include text($c-gray, $f-size-xxl + 2, 400);
-          max-width: 620px;
-          margin: 0 auto 70px;
-        }
 
         .content {
           @include grid(1fr 1fr 1fr, 20px);
@@ -533,6 +486,73 @@
 
                 &:hover {
                   filter: grayscale(0);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.team {
+      .container {
+        text-align: center;
+        padding: 120px 0 80px;
+
+        .content {
+          @include grid(1fr 1fr 1fr 1fr, 30px);
+
+          .item {
+            .image-team {
+              position: relative;
+
+              > img {
+                margin: 0 auto;
+                max-width: 170px;
+                position: relative;
+                z-index: 9;
+              }
+
+              &::before {
+                content: "";
+                position: absolute;
+                left: 40px;
+                top: 0;
+                background: url('../../images/team/dotted-shape.svg') no-repeat;
+                width: 71px;
+                height: 82px;
+                z-index: 1;
+              }
+
+              &::after {
+                content: "";
+                position: absolute;
+                right: 40px;
+                bottom: 0;
+                border: 1px solid $c-green;
+                border-radius: 55px 0 0 0;
+                width: 25px;
+                height: 25px;
+              }
+            }
+
+            > h5 {
+              @include text($c-black, $f-size-xxl, 700);
+              margin: $trim 0 $gap;
+            }
+
+            > h6 {
+              @include text($c-gray, $f-size-xs, 600);
+            }
+
+            .social {
+              margin-top: $trim;
+
+              > a {
+                @include text($c-gray-light-2, $f-size-xl, 700);
+
+                &:hover {
+                  color: $c-action;
                 }
               }
             }
