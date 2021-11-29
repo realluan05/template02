@@ -110,7 +110,7 @@
     }
 
     &.features {
-      padding: 120px 0 0;
+      padding: 120px 0 90px;
 
       .container {
         > span {
@@ -430,6 +430,111 @@
 
             > h4, .description-faq {
               text-align: left;
+            }
+          }
+        }
+      }
+    }
+
+    &.testimonials {
+      padding-top: 120px;
+
+      .container {
+        text-align: center;
+
+        > h2 {
+          @include text($c-blue, $f-size-xxl, 600);
+        }
+
+        > h3 {
+          @include text($c-black, 42px, 700);
+          margin: $trim-small 0 ($trim-small + 5);
+        }
+
+        > h4 {
+          @include text($c-gray, $f-size-xxl + 2, 400);
+          max-width: 620px;
+          margin: 0 auto 70px;
+        }
+
+        .content {
+          @include grid(1fr 1fr 1fr, 20px);
+
+          > .item {
+            background-color: $c-white;
+            box-shadow: 0 60px 120px -20px $c-blue-ligth-2;
+            padding: $trim;
+            text-align: left;
+            margin-bottom: 50px;
+
+            .stars-rating {
+              @include text($c-yellow, $f-size, 700);
+              margin: 0 0 $trim-small;
+            }
+
+            .description {
+              @include text($c-gray, $f-size-xl, 400);
+              line-height: 2;
+              margin: 0 0 ($trim-small + $gap);
+            }
+
+            .data-evaluators {
+              @include flex(center, flex-start);
+
+              > figure {
+                flex: 0 0 18%;
+                margin-right: $trim-small;
+              }
+
+              .data {
+                > span {
+                  @include text($c-black, $f-size, 600);
+                }
+
+                > p {
+                  @include text($c-gray, $f-size-xs, 400);
+                  margin-top: $gap / 2;
+                }
+              }
+            }
+          }
+        }
+
+        .content-bottom {
+          text-align: left;
+
+          > h5 {
+            @include text($c-gray, $f-size-xs, 400);
+            position: relative;
+            display: inline-block;
+            margin-bottom: $trim;
+
+            &::after {
+              content: "";
+              width: 30px;
+              height: 1px;
+              background-color: $c-gray;
+              position: absolute;
+              right: -40px;
+              top: 50%;
+            }
+          }
+
+          > ul {
+            @include flex(center, flex-start);
+
+            > li {
+              margin-right: $trim + $gap;
+
+              > img {
+                filter: grayscale(1);
+                transition: 300ms;
+                max-width: 140px;
+
+                &:hover {
+                  filter: grayscale(0);
+                }
+              }
             }
           }
         }

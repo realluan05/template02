@@ -174,3 +174,66 @@ function addFaq($title)
         </div>
     </div>
 </section>
+
+<?php
+function addTestimonials($img, $name, $charge)
+{
+    if ($img) {
+        return '<div class="item">
+                    <div class="stars-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>“Our members are so impressed. It s intuitive. It s clean. It s distraction free. If you re building a community.</p>
+                    </div>
+                    <div class="data-evaluators">
+                        <figure><img src="../assets/images/testimonials/'.$img.'" alt="Foto do Avaliador" /></figure>
+                        <div class="data">
+                            <span>'.$name.'</span>
+                            <p>'.$charge.'</p>
+                        </div>
+                    </div>
+                </div>';
+    }
+    return false;
+}
+
+function addImageTestimonials($img)
+{
+    if($img) {
+        return '<li>
+                    <img src="../assets/images/brands/'.$img.'" alt="Brands" />
+                </li>';
+    }
+    return false;
+}
+?>
+
+<section id="testimonials" class="testimonials">
+    <div class="container">
+        <h2>Testimonials</h2>
+        <h3>What Our Customers Says</h3>
+        <h4>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</h4>
+        <div class="content">
+            <?= addTestimonials("author-01.png", "Sabo Masties", "Founder @UIdeck"); ?>
+            <?= addTestimonials("author-02.png", "Margin Gesmu", "Founder @Lineicons"); ?>
+            <?= addTestimonials("author-03.png", "William Smith", "Founder @GrayGrids"); ?>
+        </div>
+        <div class="content-bottom">
+            <h5>Trusted and Used by</h5>
+            <ul>
+                <?= addImageTestimonials("ayroui.svg"); ?>
+                <?= addImageTestimonials("uideck.svg"); ?>
+                <?= addImageTestimonials("graygrids.svg"); ?>
+                <?= addImageTestimonials("lineicons.svg"); ?>
+                <?= addImageTestimonials("ecommerce-html.svg"); ?>
+            </ul>
+        </div>
+    </div>
+</section>
