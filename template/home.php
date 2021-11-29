@@ -20,15 +20,15 @@
 </section>
 
 <?php
-function itemFeatures($title, $desc, $classFontAwesome)
+function itemFeatures($title, $classFontAwesome)
 {
-    if ($title && $desc) {
+    if ($title) {
         return '<li class="item">
                     <div class="image-view">
                         <i class="'.$classFontAwesome.'"></i>
                     </div>
                     <h2>'.$title.'</h2>
-                    <p>'.$desc.'</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
                     <a href="#" class="button">Learn More</a>
                 </li>';
     }
@@ -45,16 +45,12 @@ function itemFeatures($title, $desc, $classFontAwesome)
         </p>
         <ul class="list">
             <?= itemFeatures("Free and Open-Source",
-                            "Lorem Ipsum is simply dummy text of the printing and industry.",
                             "fas fa-gift"); ?>
             <?= itemFeatures("Multipurpose Template",
-                            "Lorem Ipsum is simply dummy text of the printing and industry.",
                             "fas fa-arrows-alt"); ?>
             <?= itemFeatures("High-quality Design",
-                            "Lorem Ipsum is simply dummy text of the printing and industry.",
                             "far fa-object-group"); ?>
             <?= itemFeatures("All Essential Elements",
-                            "Lorem Ipsum is simply dummy text of the printing and industry.",
                             "fas fa-layer-group"); ?>
         </ul>
     </div>
@@ -193,7 +189,7 @@ function addTestimonials($img, $name, $charge)
                         <p>“Our members are so impressed. It s intuitive. It s clean. It s distraction free. If you re building a community.</p>
                     </div>
                     <div class="data-evaluators">
-                        <figure><img src="../assets/images/testimonials/'.$img.'" alt="Foto do Avaliador" /></figure>
+                        <figure><img src="../assets/images/testimonials/'.$img.'" alt="Foto do Avaliador" loading="lazy" /></figure>
                         <div class="data">
                             <span>'.$name.'</span>
                             <p>'.$charge.'</p>
