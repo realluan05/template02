@@ -245,9 +245,9 @@ function addTeam($img, $name, $charge)
                     <h5>'.$name.'</h5>
                     <h6>'.$charge.'</h6>
                     <div class="social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://pt-br.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>';
     }
@@ -307,14 +307,14 @@ function addTeam($img, $name, $charge)
                     <div class="item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="content">
-                            <h4>Our Location</h4>
+                            <h2>Our Location</h2>
                             <p>401 Broadway, 24th Floor, Orchard<br />Cloud View, London</p>
                         </div>
                     </div>
                     <div class="item">
                         <i class="far fa-envelope"></i>
                         <div class="content">
-                            <h4>How Can We Help?</h4>
+                            <h2>How Can We Help?</h2>
                             <p>info@yourdomain.com<br />contact@yourdomain.com</p>
                         </div>
                     </div>

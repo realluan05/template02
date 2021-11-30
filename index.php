@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
 <?php require_once 'template/head.php'; ?>
 <body>
     <?php

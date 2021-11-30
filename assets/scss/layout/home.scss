@@ -653,7 +653,7 @@
                 }
 
                 .content {
-                  > h4 {
+                  > h2 {
                     @include text($c-black, $f-size-xxl, 700);
                     margin: 0 0 $trim-small;
                   }
