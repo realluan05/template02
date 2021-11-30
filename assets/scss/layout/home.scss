@@ -546,13 +546,121 @@
             }
 
             .social {
-              margin-top: $trim;
+              margin-top: $gap * 2;
 
               > a {
                 @include text($c-gray-light-2, $f-size-xl, 700);
 
                 &:hover {
                   color: $c-action;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.contact {
+      padding: 0 0 120px;
+
+      .container {
+        max-width: 100%;
+
+        .top {
+          background-color: #f3f4fe;
+          padding: 200px 0 80px;
+
+          .wrapper {
+            @include centraliza($max-content-width);
+            position: relative;
+
+            > h2 {
+              @include text($c-black, $f-size-xl, 600);
+              margin: 0 0 ($gap * 2);
+            }
+
+            > h3 {
+              @include text($c-black, $trim + 5, 700);
+            }
+
+            form {
+              background-color: $c-white;
+              border-radius: $default-border-radius * 2;
+              box-shadow: 0 4px 28px rgba(000, 000, 000, 0.05);
+              position: absolute;
+              right: 0;
+              top: -50%;
+              padding: 50px;
+
+              > h2 {
+                @include text($c-black, $trim + 2, 700);
+                margin: 0 0 $trim;
+              }
+
+              ul {
+                > li {
+                  margin: 0 0 ($trim-small + $gap);
+
+                  label {
+                    display: block;
+                    @include text($c-gray, $f-size-xs, 400);
+                  }
+
+                  input {
+                    border: 0;
+                    border-bottom: 1px solid #f1f1f1;
+                    transition: 300ms;
+                    @include text($c-black, $f-size-xl, 400);
+                    width: 100%;
+                    padding: $trim-small 0;
+                    outline: none;
+
+                    &::placeholder {
+                      @include text($c-gray, $f-size-xl, 400);
+                    }
+
+                    &:focus {
+                      border-color: $c-action;
+                    }
+                  }
+                }
+              }
+
+              .button {
+                border: 0;
+                padding: $trim-small $trim;
+                @include text($c-white, $f-size-xxl, 600);
+              }
+            }
+          }
+        }
+
+        .bottom {
+          .wrapper {
+            @include centraliza($max-content-width);
+            padding: 80px 0;
+
+            > .content {
+              @include flex(center, space-between);
+              width: 60%;
+
+              .item {
+                @include grid(auto 1fr, 25px);
+
+                > i {
+                  @include text($c-blue, $trim + 2, 700);
+                }
+
+                .content {
+                  > h4 {
+                    @include text($c-black, $f-size-xxl, 700);
+                    margin: 0 0 $trim-small;
+                  }
+
+                  > p {
+                    @include text($c-gray, $f-size-l, 400);
+                  }
                 }
               }
             }

@@ -272,10 +272,54 @@ function addTeam($img, $name, $charge)
 <section id="contact" class="contact">
     <div class="container">
         <div class="top">
-
+            <div class="wrapper">
+                <h2>CONTACT US</h2>
+                <h3>Let’s talk about <br />
+                    Love to hear from you!
+                </h3>
+                <form>
+                    <h2>Send us a Message</h2>
+                    <ul>
+                        <li>
+                            <label for="fullname">Full Name<em>*</em></label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Adam Gelius" />
+                        </li>
+                        <li>
+                            <label for="email">Email<em>*</em></label>
+                            <input type="email" id="email" name="email" placeholder="example@yourmail.com" />
+                        </li>
+                        <li>
+                            <label for="phone">Phone<em>*</em></label>
+                            <input type="number" id="phone" name="phone" placeholder="+885 1254 5464 444" />
+                        </li>
+                        <li>
+                            <label for="message">Message<em>*</em></label>
+                            <input type="text" id="message" name="message" placeholder="type your message here" />
+                        </li>
+                    </ul>
+                    <button class="button">Send Message</button>
+                </form>
+            </div>
         </div>
         <div class="bottom">
-
+            <div class="wrapper">
+                <div class="content">
+                    <div class="item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="content">
+                            <h4>Our Location</h4>
+                            <p>401 Broadway, 24th Floor, Orchard<br />Cloud View, London</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-envelope"></i>
+                        <div class="content">
+                            <h4>How Can We Help?</h4>
+                            <p>info@yourdomain.com<br />contact@yourdomain.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
