@@ -1,0 +1,43 @@
+@import '../mixin';
+@import '../../var.scss';
+
+@include bp(max-width, $bp-medium) {
+  .footer {
+    &::before, &::after {
+      width: 100%;
+    }
+
+    .footer-top {
+      padding: 100px ($trim + $gap) 50px;
+
+      .content {
+        @include grid(1fr, $trim);
+      }
+    }
+
+    .footer-bottom {
+      .content {
+        flex-direction: column;
+        justify-content: center;
+
+        > .item {
+          flex: 0 0 100%;
+          margin: 0 0 $trim-small;
+
+          > ul {
+            justify-content: space-evenly;
+            text-align: center;
+
+            > li {
+              margin: 0;
+
+              &:nth-child(2) {
+                margin: 0 $trim-small;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

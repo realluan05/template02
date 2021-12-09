@@ -1,0 +1,31 @@
+/* ***************
+* Container
+**************** */
+/* ***************
+* Border-radius
+**************** */
+/* ***************
+* Breakpoints
+**************** */
+/* ***************
+* Margin/Padding
+**************** */
+/* ***************
+* Colors
+**************** */
+/* ***************
+* Fonts
+**************** */
+/* ***************
+* Font-size
+**************** */
+@media screen and (max-width: 768px) {
+  /* line 6, ../../../scss/layout/mobile/menu.scss */
+  #header .features {
+    padding: 10px 40px;
+  }
+  /* line 10, ../../../scss/layout/mobile/menu.scss */
+  #header #navbar, #header .login {
+    display: none;
+  }
+}

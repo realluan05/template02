@@ -32,7 +32,7 @@
           transition: 300ms;
         }
 
-        &:hover {
+        &:hover, &.active {
           > a {
             opacity: .5;
           }
@@ -141,7 +141,7 @@
           color: $c-black;
         }
 
-        &:hover {
+        &:hover, &.active {
           > a {
             color: $c-blue;
             opacity: 1;

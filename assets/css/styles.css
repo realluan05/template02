@@ -1,6 +1,6 @@
-/* ************
+/* **************************
 * Fonts
-************ */
+************************** */
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Regular.ttf");
@@ -19,9 +19,9 @@
   font-weight: 700;
   font-display: swap;
 }
-/* ************
+/* **************************
 * Layout
-************ */
+************************** */
 /* ***************
 * Container
 **************** */
@@ -85,7 +85,7 @@
   transition: 300ms;
 }
 /* line 36, ../scss/layout/_header.scss */
-.header .features ul.menu > li.item:hover > a {
+.header .features ul.menu > li.item:hover > a, .header .features ul.menu > li.item.active > a {
   opacity: .5;
 }
 /* line 43, ../scss/layout/_header.scss */
@@ -191,7 +191,7 @@
   color: #212b36;
 }
 /* line 145, ../scss/layout/_header.scss */
-.header.fixed ul.menu > li.item:hover > a {
+.header.fixed ul.menu > li.item:hover > a, .header.fixed ul.menu > li.item.active > a {
   color: #3056d3;
   opacity: 1;
 }
@@ -430,6 +430,48 @@
   background-color: #212b36;
 }
 
-/* ************
+/* **************************
+* Layout Mobile
+************************** */
+@media screen and (max-width: 768px) {
+  /* line 6, ../scss/layout/mobile/_footer.scss */
+  .footer::before, .footer::after {
+    width: 100%;
+  }
+  /* line 10, ../scss/layout/mobile/_footer.scss */
+  .footer .footer-top {
+    padding: 100px 40px 50px;
+  }
+  /* line 13, ../scss/layout/mobile/_footer.scss */
+  .footer .footer-top .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  /* line 19, ../scss/layout/mobile/_footer.scss */
+  .footer .footer-bottom .content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* line 23, ../scss/layout/mobile/_footer.scss */
+  .footer .footer-bottom .content > .item {
+    flex: 0 0 100%;
+    margin: 0 0 15px;
+  }
+  /* line 27, ../scss/layout/mobile/_footer.scss */
+  .footer .footer-bottom .content > .item > ul {
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  /* line 31, ../scss/layout/mobile/_footer.scss */
+  .footer .footer-bottom .content > .item > ul > li {
+    margin: 0;
+  }
+  /* line 34, ../scss/layout/mobile/_footer.scss */
+  .footer .footer-bottom .content > .item > ul > li:nth-child(2) {
+    margin: 0 15px;
+  }
+}
+/* **************************
 * Mixins
-************ */
+************************** */

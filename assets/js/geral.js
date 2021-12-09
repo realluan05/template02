@@ -19,6 +19,21 @@ jQuery(function($y){
         }
     })
 
+    $y('#navbar ul.menu > li.item > a').click(function(e){
+        e.preventDefault();
+
+        if($y(this).parent().prevAll().hasClass('active') || $y(this).parent().nextAll().hasClass('active')) {
+            $y(this).parent().prevAll().removeClass('active');
+            $y(this).parent().nextAll().removeClass('active');
+        }
+
+        $y(this).parent().addClass('active');
+
+        $y('html, body').animate({
+            scrollTop: $y($y.attr(this, 'href')).offset().top
+        }, 500);
+    });
+
     $y('#btn-ir-topo').click(() => {
         $y('html, body').animate({scrollTop : 0}, 'slow');
     });
@@ -27,5 +42,4 @@ jQuery(function($y){
         $y(this).children('span').toggleClass('act');
         $y(this).next().toggleClass('act');
     });
-
 });

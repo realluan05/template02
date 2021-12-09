@@ -1,10 +1,18 @@
 <?php
-function item($text, $href)
+function item($text, $href, $isFirst = false)
 {
     if ($text && $href) {
-        return '<li class="item">
+        return '<li class="item '. isFirst($isFirst) .'">
                     <a href="#'.$href.'">'.$text.'</a>
                 </li>';
+    }
+    return false;
+}
+
+function isFirst($yesno)
+{
+    if ($yesno) {
+        return 'active';
     }
     return false;
 }
@@ -23,9 +31,9 @@ function dropItem($text, $href)
 <nav id="navbar">
     <div class="menu-container">
         <ul class="menu">
-            <?= item("Home", "home"); ?>
-            <?= item("About", "about"); ?>
-            <?= item("Pricing", "pricing"); ?>
+            <?= item("Home", "download", true); ?>
+            <?= item("About", "about-us"); ?>
+            <?= item("Pricing", "price"); ?>
             <?= item("Team", "team"); ?>
             <?= item("Contact", "contact"); ?>
             <li class="item has-children">

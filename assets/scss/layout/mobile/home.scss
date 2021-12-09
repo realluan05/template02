@@ -1,0 +1,146 @@
+@import '../mixin';
+@import '../../var.scss';
+
+@include bp(max-width, $bp-medium) {
+  .main-container {
+    section {
+      .container {
+        padding: 0 ($trim + $gap);
+      }
+
+      &.download {
+        padding: 150px 0 0;
+
+        .container {
+          h1 {
+            font-size: $f-size-xxl + 8;
+          }
+
+          p.description {
+            font-size: $f-size-xl;
+          }
+
+          .buttons {
+            flex-direction: row;
+
+            > a.button {
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      &.features {
+        .container {
+          ul.list {
+            @include grid(1fr, $trim);
+          }
+        }
+      }
+
+      &.about-us {
+        padding: 50px $trim;
+
+        .container {
+          padding: 0;
+          flex-wrap: wrap;
+
+          .left {
+            padding: 0 $trim;
+            flex: 0 0 100%;
+
+            a.button {
+              margin: 0 0 50px;
+            }
+          }
+        }
+      }
+
+      &.price {
+        .container {
+          padding: 120px ($trim + $gap) 90px;
+
+          ul.list {
+            @include grid(1fr, $trim);
+            justify-content: center;
+          }
+        }
+      }
+
+      &.faq {
+        .container {
+          .content {
+            @include grid(1fr, $trim-small);
+          }
+        }
+      }
+
+      &.testimonials {
+        .container {
+          .content {
+            @include grid(1fr, 0);
+          }
+
+          .content-bottom > ul {
+            @include grid(1fr 1fr, $trim-small 0);
+
+            > li > img {
+              margin: 0 auto;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+
+      &.team {
+        .container {
+          padding: 120px ($trim + $gap) 80px;
+
+          .content {
+            @include grid(1fr, ($trim + $gap));
+          }
+        }
+      }
+
+      &.contact {
+        padding: 0;
+
+        .container {
+          padding: 0;
+
+          .top {
+            padding: 50px $trim;
+
+            .wrapper {
+              > h3 {
+                margin: 0 0 $trim;
+              }
+
+              form {
+                position: relative;
+                top: initial;
+                padding: $trim;
+              }
+            }
+          }
+
+          .bottom {
+            .wrapper {
+              padding: 50px $trim;
+
+              > .content {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+
+                .item:first-child {
+                  margin: 0 0 $trim;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
