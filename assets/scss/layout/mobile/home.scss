@@ -71,6 +71,12 @@
         .container {
           .content {
             @include grid(1fr, $trim-small);
+
+            .item {
+              .description-faq {
+                padding: $trim 0 0;
+              }
+            }
           }
         }
       }
@@ -82,11 +88,15 @@
           }
 
           .content-bottom > ul {
-            @include grid(1fr 1fr, $trim-small 0);
+            @include grid(1fr 1fr, $trim-small);
 
-            > li > img {
-              margin: 0 auto;
-              max-width: 100%;
+            > li {
+              margin: 0;
+
+              > img {
+                margin: 0 auto;
+                max-width: 100%;
+              }
             }
           }
         }

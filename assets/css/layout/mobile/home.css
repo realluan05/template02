@@ -85,66 +85,74 @@
     grid-template-columns: 1fr;
     gap: 15px;
   }
-  /* line 80, ../../../scss/layout/mobile/home.scss */
+  /* line 76, ../../../scss/layout/mobile/home.scss */
+  .main-container section.faq .container .content .item .description-faq {
+    padding: 30px 0 0;
+  }
+  /* line 86, ../../../scss/layout/mobile/home.scss */
   .main-container section.testimonials .container .content {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0;
   }
-  /* line 84, ../../../scss/layout/mobile/home.scss */
+  /* line 90, ../../../scss/layout/mobile/home.scss */
   .main-container section.testimonials .container .content-bottom > ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px 0;
+    gap: 15px;
   }
-  /* line 87, ../../../scss/layout/mobile/home.scss */
+  /* line 93, ../../../scss/layout/mobile/home.scss */
+  .main-container section.testimonials .container .content-bottom > ul > li {
+    margin: 0;
+  }
+  /* line 96, ../../../scss/layout/mobile/home.scss */
   .main-container section.testimonials .container .content-bottom > ul > li > img {
     margin: 0 auto;
     max-width: 100%;
   }
-  /* line 96, ../../../scss/layout/mobile/home.scss */
+  /* line 106, ../../../scss/layout/mobile/home.scss */
   .main-container section.team .container {
     padding: 120px 40px 80px;
   }
-  /* line 99, ../../../scss/layout/mobile/home.scss */
+  /* line 109, ../../../scss/layout/mobile/home.scss */
   .main-container section.team .container .content {
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  /* line 105, ../../../scss/layout/mobile/home.scss */
+  /* line 115, ../../../scss/layout/mobile/home.scss */
   .main-container section.contact {
     padding: 0;
   }
-  /* line 108, ../../../scss/layout/mobile/home.scss */
+  /* line 118, ../../../scss/layout/mobile/home.scss */
   .main-container section.contact .container {
     padding: 0;
   }
-  /* line 111, ../../../scss/layout/mobile/home.scss */
+  /* line 121, ../../../scss/layout/mobile/home.scss */
   .main-container section.contact .container .top {
     padding: 50px 30px;
   }
-  /* line 115, ../../../scss/layout/mobile/home.scss */
+  /* line 125, ../../../scss/layout/mobile/home.scss */
   .main-container section.contact .container .top .wrapper > h3 {
     margin: 0 0 30px;
   }
-  /* line 119, ../../../scss/layout/mobile/home.scss */
+  /* line 129, ../../../scss/layout/mobile/home.scss */
   .main-container section.contact .container .top .wrapper form {
     position: relative;
     top: initial;
     padding: 30px;
   }
-  /* line 128, ../../../scss/layout/mobile/home.scss */
+  /* line 138, ../../../scss/layout/mobile/home.scss */
   .main-container section.contact .container .bottom .wrapper {
     padding: 50px 30px;
   }
-  /* line 131, ../../../scss/layout/mobile/home.scss */
+  /* line 141, ../../../scss/layout/mobile/home.scss */
   .main-container section.contact .container .bottom .wrapper > .content {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
   }
-  /* line 136, ../../../scss/layout/mobile/home.scss */
+  /* line 146, ../../../scss/layout/mobile/home.scss */
   .main-container section.contact .container .bottom .wrapper > .content .item:first-child {
     margin: 0 0 30px;
   }
