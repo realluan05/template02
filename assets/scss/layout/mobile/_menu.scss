@@ -1,0 +1,55 @@
+@import '../mixin';
+@import '../../var.scss';
+
+@include bp(max-width, $bp-medium) {
+  #header {
+    .features {
+      padding: $gap ($trim + $gap);
+
+      .menu-mobile {
+        transition: 300ms;
+
+        .icon {
+          @include text($c-white, $f-size-xxl + 6, 700);
+          transition: 300ms;
+
+          > i:first-child {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            transition: 300ms;
+          }
+
+          > i:last-child {
+            display: none;
+            transition: 300ms;
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+
+        &.active {
+          .icon {
+            > i:first-child {
+              display: none;
+              opacity: 0;
+              visibility: hidden;
+              transition: 300ms;
+            }
+
+            > i:last-child {
+              display: block;
+              opacity: 1;
+              visibility: visible;
+              transition: 300ms;
+            }
+          }
+        }
+      }
+    }
+
+    #navbar, .login {
+      display: none;
+    }
+  }
+}

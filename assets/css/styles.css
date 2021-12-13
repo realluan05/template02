@@ -170,7 +170,13 @@
   color: #212b36;
   opacity: 1;
 }
-/* line 123, ../scss/layout/_header.scss */
+@media screen and (min-width: 768px) {
+  /* line 123, ../scss/layout/_header.scss */
+  .header .features .menu-mobile {
+    display: none;
+  }
+}
+/* line 129, ../scss/layout/_header.scss */
 .header.fixed {
   position: fixed;
   top: 0;
@@ -178,24 +184,24 @@
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
 }
-/* line 130, ../scss/layout/_header.scss */
+/* line 136, ../scss/layout/_header.scss */
 .header.fixed a.logo {
   display: none;
 }
-/* line 134, ../scss/layout/_header.scss */
+/* line 140, ../scss/layout/_header.scss */
 .header.fixed a.logo2 {
   display: block;
 }
-/* line 140, ../scss/layout/_header.scss */
+/* line 146, ../scss/layout/_header.scss */
 .header.fixed ul.menu > li.item > a {
   color: #212b36;
 }
-/* line 145, ../scss/layout/_header.scss */
+/* line 151, ../scss/layout/_header.scss */
 .header.fixed ul.menu > li.item:hover > a, .header.fixed ul.menu > li.item.active > a {
   color: #3056d3;
   opacity: 1;
 }
-/* line 154, ../scss/layout/_header.scss */
+/* line 160, ../scss/layout/_header.scss */
 .header.fixed ul.menu > li.item.has-children > a::after {
   content: "";
   position: absolute;
@@ -208,30 +214,30 @@
   height: 10px;
   margin-top: -2px;
 }
-/* line 160, ../scss/layout/_header.scss */
+/* line 166, ../scss/layout/_header.scss */
 .header.fixed ul.menu > li.item.has-children:hover > a {
   opacity: 1;
 }
-/* line 163, ../scss/layout/_header.scss */
+/* line 169, ../scss/layout/_header.scss */
 .header.fixed ul.menu > li.item.has-children:hover > a::after {
   border-left: 2px solid #3056d3;
   border-bottom: 2px solid #3056d3;
 }
-/* line 173, ../scss/layout/_header.scss */
+/* line 179, ../scss/layout/_header.scss */
 .header.fixed .login > a {
   color: #212b36;
 }
-/* line 177, ../scss/layout/_header.scss */
+/* line 183, ../scss/layout/_header.scss */
 .header.fixed .login > a.enter:hover {
   opacity: 1;
   color: #3056d3;
 }
-/* line 183, ../scss/layout/_header.scss */
+/* line 189, ../scss/layout/_header.scss */
 .header.fixed .login > a.exit {
   background-color: #3056d3;
   color: #ffffff;
 }
-/* line 187, ../scss/layout/_header.scss */
+/* line 193, ../scss/layout/_header.scss */
 .header.fixed .login > a.exit:hover {
   color: #ffffff;
   background-color: #212b36;
@@ -470,6 +476,55 @@
   /* line 34, ../scss/layout/mobile/_footer.scss */
   .footer .footer-bottom .content > .item > ul > li:nth-child(2) {
     margin: 0 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 6, ../scss/layout/mobile/_menu.scss */
+  #header .features {
+    padding: 10px 40px;
+  }
+  /* line 9, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile {
+    transition: 300ms;
+  }
+  /* line 12, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile .icon {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    transition: 300ms;
+  }
+  /* line 16, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile .icon > i:first-child {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: 300ms;
+  }
+  /* line 23, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile .icon > i:last-child {
+    display: none;
+    transition: 300ms;
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* line 33, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile.active .icon > i:first-child {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms;
+  }
+  /* line 40, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile.active .icon > i:last-child {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: 300ms;
+  }
+  /* line 51, ../scss/layout/mobile/_menu.scss */
+  #header #navbar, #header .login {
+    display: none;
   }
 }
 /* **************************

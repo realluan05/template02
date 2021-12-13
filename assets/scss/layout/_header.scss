@@ -118,6 +118,12 @@
         }
       }
     }
+
+    @include bp(min-width, $bp-medium) {
+      .menu-mobile {
+        display: none;
+      }
+    }
   }
 
   &.fixed {

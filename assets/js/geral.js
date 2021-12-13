@@ -42,4 +42,10 @@ jQuery(function($y){
         $y(this).children('span').toggleClass('act');
         $y(this).next().toggleClass('act');
     });
+
+    if($y(window).width() < 768) {
+        $y('.menu-mobile > .icon').click(function(){
+            $y(this).parent().toggleClass('active');
+        });
+    }
 });
