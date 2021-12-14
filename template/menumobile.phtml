@@ -1,0 +1,55 @@
+<?php
+function itemMobile($text, $href, $isFirst = false)
+{
+    if ($text && $href) {
+        return '<li class="item '. isFirstMobile($isFirst) .'">
+                    <a href="#'.$href.'">'.$text.'</a>
+                </li>';
+    }
+    return false;
+}
+
+function isFirstMobile($yesno)
+{
+    if ($yesno) {
+        return 'active';
+    }
+    return false;
+}
+
+function dropItemMobile($text, $href)
+{
+    if ($text && $href) {
+        return '<li class="sub-item">
+                    <a href="'.$href.'">'.$text.'</a>
+                </li>';
+    }
+    return false;
+}
+?>
+
+<nav id="navbar-mobile">
+    <div class="menu-container">
+        <ul class="menu">
+            <?= itemMobile("Home", "download", true); ?>
+            <?= itemMobile("About", "about-us"); ?>
+            <?= itemMobile("Pricing", "price"); ?>
+            <?= itemMobile("Team", "team"); ?>
+            <?= itemMobile("Contact", "contact"); ?>
+            <li class="item has-children">
+                <a href="javascript:void(0)">Pages</a>
+                <div class="dropdown">
+                    <ul>
+                        <?= dropItemMobile("About Page", "about.php") ?>
+                        <?= dropItemMobile("Pricing Page", "pricing.php") ?>
+                        <?= dropItemMobile("Contact Page", "contact.php") ?>
+                        <?= dropItemMobile("Blog Grid Page", "blog.php") ?>
+                        <?= dropItemMobile("Blog Details Page", "blog-details.php") ?>
+                        <?= dropItemMobile("Sign in Page", "login.php") ?>
+                        <?= dropItemMobile("404 Page", "404.php") ?>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>

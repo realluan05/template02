@@ -119,7 +119,7 @@
       }
     }
 
-    @include bp(min-width, $bp-medium) {
+    @include bp(min-width, $bp-medium + 1) {
       .menu-mobile {
         display: none;
       }

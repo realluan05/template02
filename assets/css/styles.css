@@ -170,7 +170,7 @@
   color: #212b36;
   opacity: 1;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   /* line 123, ../scss/layout/_header.scss */
   .header .features .menu-mobile {
     display: none;
@@ -478,53 +478,135 @@
     margin: 0 15px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   /* line 6, ../scss/layout/mobile/_menu.scss */
   #header .features {
     padding: 10px 40px;
   }
   /* line 9, ../scss/layout/mobile/_menu.scss */
   #header .features .menu-mobile {
-    transition: 300ms;
+    width: 25px;
+    height: 25px;
+    position: relative;
   }
-  /* line 12, ../scss/layout/mobile/_menu.scss */
+  /* line 14, ../scss/layout/mobile/_menu.scss */
   #header .features .menu-mobile .icon {
     color: #ffffff;
     font-size: 24px;
     font-weight: 700;
     transition: 300ms;
   }
-  /* line 16, ../scss/layout/mobile/_menu.scss */
+  /* line 18, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile .icon > i {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  /* line 24, ../scss/layout/mobile/_menu.scss */
   #header .features .menu-mobile .icon > i:first-child {
-    display: block;
     opacity: 1;
     visibility: visible;
     transition: 300ms;
   }
-  /* line 23, ../scss/layout/mobile/_menu.scss */
+  /* line 30, ../scss/layout/mobile/_menu.scss */
   #header .features .menu-mobile .icon > i:last-child {
-    display: none;
     transition: 300ms;
     opacity: 0;
     visibility: hidden;
   }
-  /* line 33, ../scss/layout/mobile/_menu.scss */
-  #header .features .menu-mobile.active .icon > i:first-child {
-    display: none;
-    opacity: 0;
+  /* line 37, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile #navbar-mobile {
     visibility: hidden;
+    opacity: 0;
     transition: 300ms;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    min-width: 300px;
   }
-  /* line 40, ../scss/layout/mobile/_menu.scss */
-  #header .features .menu-mobile.active .icon > i:last-child {
+}
+@media screen and (max-width: 769px) and (max-width: 360px) {
+  /* line 37, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile #navbar-mobile {
+    min-width: 240px;
+  }
+}
+@media screen and (max-width: 769px) {
+  /* line 50, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile #navbar-mobile ul.menu {
+    background-color: #ffffff;
+    flex-direction: column;
+    padding: 20px 30px;
+    border-radius: 5px;
+    filter: drop-shadow(0 2px 6px #ccc);
+  }
+  /* line 57, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile #navbar-mobile ul.menu > li.item {
+    text-align: left;
+    padding: 0;
+    width: 100%;
+  }
+  /* line 62, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile #navbar-mobile ul.menu > li.item > a {
+    color: #212b36;
+    padding: 0;
     display: block;
+  }
+  /* line 69, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile #navbar-mobile ul.menu > li.item.active > a, #header .features .menu-mobile #navbar-mobile ul.menu > li.item:hover > a {
+    color: #3056d3;
+    opacity: 1;
+  }
+  /* line 76, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile #navbar-mobile ul.menu > li.item.has-children > a::after {
+    border-color: #212b36;
+    right: 0;
+  }
+  /* line 81, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile #navbar-mobile ul.menu > li.item.has-children > .dropdown {
+    position: static;
+    padding: 15px 0 0;
+    box-shadow: none;
+    transition: none;
+    display: none;
+    opacity: initial;
+    visibility: initial;
+    min-width: initial;
+  }
+  /* line 93, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile #navbar-mobile ul.menu > li.item.has-children:hover > a::after {
+    border-color: #3056d3;
+  }
+  /* line 99, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile #navbar-mobile ul.menu > li.item:not(:last-child) {
+    margin: 0 0 13px;
+  }
+  /* line 108, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile.active .icon > i:first-child {
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms;
+  }
+  /* line 114, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile.active .icon > i:last-child {
     opacity: 1;
     visibility: visible;
     transition: 300ms;
   }
-  /* line 51, ../scss/layout/mobile/_menu.scss */
+  /* line 121, ../scss/layout/mobile/_menu.scss */
+  #header .features .menu-mobile.active #navbar-mobile {
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+  }
+  /* line 130, ../scss/layout/mobile/_menu.scss */
   #header #navbar, #header .login {
     display: none;
+  }
+  /* line 136, ../scss/layout/mobile/_menu.scss */
+  #header.fixed .menu-mobile .icon {
+    color: #3056d3;
   }
 }
 /* **************************

@@ -46,7 +46,7 @@
           flex-wrap: wrap;
 
           .left {
-            padding: 0 $trim;
+            padding: $trim $trim 0;
             flex: 0 0 100%;
 
             a.button {
