@@ -26,4 +26,4 @@ Se tudo der certo, você terá todos os arquivos que compõem o projeto e poder�
 ![HTML5](https://github.com/realluan05/template02/blob/main/assets/images/readme/icon-html5.svg)
 ![SASS](https://github.com/realluan05/template02/blob/main/assets/images/readme/icon-sass.svg)
 ![PHP](https://github.com/realluan05/template02/blob/main/assets/images/readme/icon-php.svg)
-![HTML5](https://github.com/realluan05/template02/blob/main/assets/images/readme/icon-query48.png)
+![jQuery](https://github.com/realluan05/template02/blob/main/assets/images/readme/icon-jquery48.png)
