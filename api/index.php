@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php require_once './template/head.phtml'; ?>
+<?php require_once 'head.php'; ?>
 <body>
     <?php
-        require_once './template/header.phtml';
-        require_once './template/main.phtml';
-        require_once './template/footer.phtml';
+        require_once 'header.php';
+        require_once 'main.php';
+        require_once 'footer.php';
     ?>
 </body>
 </html>
